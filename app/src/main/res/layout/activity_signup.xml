@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteToo"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/whiteToo"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingLeft="25dp"
+        android:paddingRight="25dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_centerInParent="true"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:contentDescription="@string/app_name"
+            android:descendantFocusability="beforeDescendants"
+            android:focusableInTouchMode="true"
+            android:src="@mipmap/matrimony_three" />
+
+
+        <EditText
+            android:id="@+id/edt_login_companyId"
+            style="@style/edtiText"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/rectangle"
+            android:drawableRight="@android:drawable/ic_menu_edit"
+            android:hint="@string/full_name"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="@dimen/txt_view_normal" />
+
+
+        <EditText
+            android:id="@+id/u"
+            style="@style/edtiText"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle"
+            android:drawableRight="@android:drawable/ic_menu_edit"
+            android:hint="@string/mobile"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="@dimen/txt_view_normal" />
+
+        <EditText
+            android:id="@+id/edt_login_password"
+            style="@style/edtiText"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle"
+            android:drawableRight="@android:drawable/ic_menu_edit"
+            android:hint="@string/gender"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="@dimen/txt_view_normal" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <EditText
+                style="@style/edtiText"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight=".3"
+                android:background="@drawable/rectangle"
+                android:drawableRight="@android:drawable/ic_menu_edit"
+                android:hint="@string/country"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="@dimen/txt_view_normal" />
+
+            <EditText
+                style="@style/edtiText"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight=".3"
+                android:background="@drawable/rectangle"
+                android:drawableRight="@android:drawable/ic_menu_edit"
+                android:hint="@string/state"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="@dimen/txt_view_normal" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <EditText
+                style="@style/edtiText"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight=".5"
+                android:background="@drawable/rectangle"
+                android:drawableRight="@android:drawable/ic_menu_edit"
+                android:hint="@string/city"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="@dimen/txt_view_normal" />
+
+            <EditText
+                style="@style/edtiText"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="5dp"
+                android:layout_weight=".5"
+                android:background="@drawable/rectangle"
+                android:drawableRight="@android:drawable/ic_menu_edit"
+                android:hint="@string/pincode"
+                android:imeOptions="actionDone"
+                android:inputType="text"
+                android:textColorHint="@color/colorPrimaryDark"
+                android:textSize="@dimen/txt_view_normal" />
+        </LinearLayout>
+
+        <EditText
+            android:id="@+id/er"
+            style="@style/edtiText"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/rectangle"
+            android:drawableRight="@android:drawable/ic_menu_edit"
+            android:hint="@string/setpassword"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:textColorHint="@color/colorPrimaryDark"
+            android:textSize="@dimen/txt_view_normal" />
+        <Button
+            android:id="@+id/btn_signup"
+            style="@style/button"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/Signup" />
+
+
+    </LinearLayout>
+    </ScrollView>
+</LinearLayout>
+
+

@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fl_login_container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/whiteToo"
+    android:orientation="vertical">
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="50dp"
+                android:orientation="vertical"
+                android:paddingLeft="15dp"
+                android:paddingRight="15dp">
+
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_centerInParent="true"
+                    android:layout_gravity="center"
+                    android:contentDescription="@string/app_name"
+                    android:descendantFocusability="beforeDescendants"
+                    android:focusableInTouchMode="true"
+                    android:src="@mipmap/matrimony_three" />
+
+
+                    <EditText
+                        android:id="@+id/edt_username"
+                        style="@style/edtiText"
+                        android:layout_marginTop="10dp"
+                        android:background="@drawable/rectangle"
+                        android:drawableRight="@android:drawable/ic_menu_edit"
+                        android:hint="@string/username"
+                        android:imeOptions="actionNext"
+                        android:inputType="text"
+                        android:textColorHint="@color/colorPrimaryDark"
+                        android:textSize="@dimen/txt_view_normal" />
+
+                <com.xwray.passwordview.PasswordView
+                    android:id="@+id/pv_login_password"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:background="@drawable/rectangle"
+                    android:drawableRight="@android:drawable/ic_menu_edit"
+                    android:fontFamily="sans-serif"
+                    android:hint="@string/password"
+                    android:imeOptions="actionDone"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:textColorHint="@color/colorPrimaryDark"
+                    android:textSize="@dimen/txt_view_normal"
+                    app:useStrikeThrough="true" />
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <android.support.v7.widget.AppCompatCheckBox
+                        android:id="@+id/chk_login_fingerprintId"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight=".3"
+                        android:textStyle="bold"
+                        android:visibility="visible" />
+
+
+                    <TextView
+                        android:id="@+id/txt_forgot_password"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight=".7"
+                        android:gravity="right"
+                        android:padding="5dp"
+                        android:text="@string/forgotpassword"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/txt_view_small" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btn_login_signin"
+                    style="@style/button"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginRight="15dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:text="@string/login" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:weightSum="1">
+
+                    <TextView
+                        android:id="@+id/t"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight=".6"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/not_yet_registered"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/txt_view_small" />
+
+                    <TextView
+                        android:id="@+id/txt_register"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="30dp"
+                        android:layout_marginLeft="15dp"
+                        android:layout_marginRight="15dp"
+                        android:layout_marginTop="5dp"
+                        android:layout_weight=".5"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:text="@string/register"
+                        android:textColor="@color/colorPrimaryDark"
+                        android:textSize="@dimen/txt_view_normal"
+                        android:textStyle="bold|italic" />
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
