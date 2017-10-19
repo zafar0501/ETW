@@ -39,39 +39,12 @@
     </item>
     <item
         is-multidex="false"
-        jar="/Users/zafarhussain/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/4.0.0-RC1/7baec7d5132e7343100a99630a56a6584a33addc/glide-4.0.0-RC1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="7baec7d5132e7343100a99630a56a6584a33addc">
-        <dex dex="/Users/zafarhussain/Desktop/Lalit(Microlan)/PerFectMatrimony/app/build/intermediates/pre-dexed/debug/glide-4.0.0-RC1_bf919a7e4373d8f630f5d96fd09934edb9573022.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/zafarhussain/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/disklrucache/4.0.0-RC1/1b4bba8f8d3df8db064c875c043c01e9ca3cdee9/disklrucache-4.0.0-RC1.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="1b4bba8f8d3df8db064c875c043c01e9ca3cdee9">
-        <dex dex="/Users/zafarhussain/Desktop/Lalit(Microlan)/PerFectMatrimony/app/build/intermediates/pre-dexed/debug/disklrucache-4.0.0-RC1_5726753b890c5be4e3d16536e4a3e61216c3c646.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="/Users/zafarhussain/.android/build-cache/9a23b5c48ea696807c560941eac50923e8d99d84/output/jars/classes.jar"
         jumboMode="false"
         optimize="true"
         revision="26.0.2"
         sha1="e1625e48a836779b5fa141d22e5d05563aaccc9a">
         <dex dex="/Users/zafarhussain/Desktop/Lalit(Microlan)/PerFectMatrimony/app/build/intermediates/pre-dexed/debug/classes_7ff8b74fb7d9b10f62334a06d689e7e4d2d76bd4.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/zafarhussain/.android/build-cache/cd652e807152029cb810847f5c559c7e44def7dd/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="364364bf77b4a71afc5930fc3ae57b3f0eea637c">
-        <dex dex="/Users/zafarhussain/Desktop/Lalit(Microlan)/PerFectMatrimony/app/build/intermediates/pre-dexed/debug/classes_08dedde3e906e8108c90d061a53f43ddfc956737.jar" />
     </item>
     <item
         is-multidex="false"
@@ -90,42 +63,6 @@
         revision="26.0.2"
         sha1="ed87ccdcb70c17d71ba4e6e4ac16afa62d3c49fb">
         <dex dex="/Users/zafarhussain/Desktop/Lalit(Microlan)/PerFectMatrimony/app/build/intermediates/pre-dexed/debug/classes_fd854bc81ca1c2d1f7faa20b884ff4151a5b58ce.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/zafarhussain/.android/build-cache/017293e0e5596be9b498994ea9975af064212175/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="f47f4d5bdfd7d7bf330945b8a7ccce4ab437a710">
-        <dex dex="/Users/zafarhussain/Desktop/Lalit(Microlan)/PerFectMatrimony/app/build/intermediates/pre-dexed/debug/classes_1884b70d3cb7ad4aeb523f74ad03104d2812c4bd.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/zafarhussain/.android/build-cache/af75ec0725e1349da4454bfd16fc657f7c835ad5/output/jars/classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="b0b31cfdc87bd27ff394c5802ab9aa4632750981">
-        <dex dex="/Users/zafarhussain/Desktop/Lalit(Microlan)/PerFectMatrimony/app/build/intermediates/pre-dexed/debug/classes_6f13b010de6f4fafc1400d0f0d98b0f5238df0a9.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/zafarhussain/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.3.0/9e09011e9767bb76b5e27c9b8223476b93b14631/converter-gson-2.3.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="9e09011e9767bb76b5e27c9b8223476b93b14631">
-        <dex dex="/Users/zafarhussain/Desktop/Lalit(Microlan)/PerFectMatrimony/app/build/intermediates/pre-dexed/debug/converter-gson-2.3.0_b9d4950dc76c150e2f38e00bf32ac75922c85867.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="/Users/zafarhussain/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.22/a1c83373863cec7ae8d89dc1c5722d8cb6ec0309/slf4j-api-1.7.22.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="26.0.2"
-        sha1="a1c83373863cec7ae8d89dc1c5722d8cb6ec0309">
-        <dex dex="/Users/zafarhussain/Desktop/Lalit(Microlan)/PerFectMatrimony/app/build/intermediates/pre-dexed/debug/slf4j-api-1.7.22_a1f4dc61224b2a6caf231d05601a60da67bd69a1.jar" />
     </item>
     <item
         is-multidex="false"
@@ -180,6 +117,87 @@
         revision="26.0.2"
         sha1="2430e711762a749feb00b3d64858ca4768251b9d">
         <dex dex="/Users/zafarhussain/Desktop/Lalit(Microlan)/PerFectMatrimony/app/build/intermediates/pre-dexed/debug/classes_2f0400f64644cf93346c02295da100f4cd328b7e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zafarhussain/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/glide/4.0.0-RC1/7baec7d5132e7343100a99630a56a6584a33addc/glide-4.0.0-RC1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="7baec7d5132e7343100a99630a56a6584a33addc">
+        <dex dex="/Users/zafarhussain/Desktop/Lalit(Microlan)/PerFectMatrimony/app/build/intermediates/pre-dexed/debug/glide-4.0.0-RC1_bf919a7e4373d8f630f5d96fd09934edb9573022.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zafarhussain/.gradle/caches/modules-2/files-2.1/com.github.bumptech.glide/disklrucache/4.0.0-RC1/1b4bba8f8d3df8db064c875c043c01e9ca3cdee9/disklrucache-4.0.0-RC1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="1b4bba8f8d3df8db064c875c043c01e9ca3cdee9">
+        <dex dex="/Users/zafarhussain/Desktop/Lalit(Microlan)/PerFectMatrimony/app/build/intermediates/pre-dexed/debug/disklrucache-4.0.0-RC1_5726753b890c5be4e3d16536e4a3e61216c3c646.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zafarhussain/.android/build-cache/cd652e807152029cb810847f5c559c7e44def7dd/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="364364bf77b4a71afc5930fc3ae57b3f0eea637c">
+        <dex dex="/Users/zafarhussain/Desktop/Lalit(Microlan)/PerFectMatrimony/app/build/intermediates/pre-dexed/debug/classes_08dedde3e906e8108c90d061a53f43ddfc956737.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/zafarhussain/Desktop/Lalit(Microlan)/20181005/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="79aff1c3b8b6b16e74dfbf0bf19b69ff9b8abc1f">
+        <dex dex="/Users/zafarhussain/Desktop/Lalit(Microlan)/20181005/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_17f959ace3fa1fdaba203d71ff453f501001f819/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zafarhussain/.android/build-cache/017293e0e5596be9b498994ea9975af064212175/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f47f4d5bdfd7d7bf330945b8a7ccce4ab437a710">
+        <dex dex="/Users/zafarhussain/Desktop/Lalit(Microlan)/PerFectMatrimony/app/build/intermediates/pre-dexed/debug/classes_1884b70d3cb7ad4aeb523f74ad03104d2812c4bd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zafarhussain/.android/build-cache/af75ec0725e1349da4454bfd16fc657f7c835ad5/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="b0b31cfdc87bd27ff394c5802ab9aa4632750981">
+        <dex dex="/Users/zafarhussain/Desktop/Lalit(Microlan)/PerFectMatrimony/app/build/intermediates/pre-dexed/debug/classes_6f13b010de6f4fafc1400d0f0d98b0f5238df0a9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zafarhussain/.gradle/caches/modules-2/files-2.1/com.squareup.retrofit2/converter-gson/2.3.0/9e09011e9767bb76b5e27c9b8223476b93b14631/converter-gson-2.3.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="9e09011e9767bb76b5e27c9b8223476b93b14631">
+        <dex dex="/Users/zafarhussain/Desktop/Lalit(Microlan)/PerFectMatrimony/app/build/intermediates/pre-dexed/debug/converter-gson-2.3.0_b9d4950dc76c150e2f38e00bf32ac75922c85867.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/zafarhussain/Desktop/Lalit(Microlan)/20181005/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/zafarhussain/Desktop/Lalit(Microlan)/20181005/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_b38e3c48a57ddac2e6118de880039799d7698c98/classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/zafarhussain/.gradle/caches/modules-2/files-2.1/org.slf4j/slf4j-api/1.7.22/a1c83373863cec7ae8d89dc1c5722d8cb6ec0309/slf4j-api-1.7.22.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.2"
+        sha1="a1c83373863cec7ae8d89dc1c5722d8cb6ec0309">
+        <dex dex="/Users/zafarhussain/Desktop/Lalit(Microlan)/PerFectMatrimony/app/build/intermediates/pre-dexed/debug/slf4j-api-1.7.22_a1f4dc61224b2a6caf231d05601a60da67bd69a1.jar" />
     </item>
     <item
         is-multidex="false"
