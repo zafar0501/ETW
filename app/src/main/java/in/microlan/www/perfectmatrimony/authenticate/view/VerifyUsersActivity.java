@@ -70,6 +70,7 @@ public class VerifyUsersActivity extends BaseActivity implements View.OnClickLis
     @Override
     public void onClick(View v) {
 
+        
         switch (v.getId()) {
             case R.id.txt_resend_otp:
                 startActivity(new Intent(context, ForgotPasswordActivity.class));
