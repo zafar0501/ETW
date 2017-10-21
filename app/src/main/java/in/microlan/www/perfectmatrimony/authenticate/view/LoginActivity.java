@@ -8,6 +8,7 @@ import android.support.annotation.Nullable;
 import android.support.v7.widget.RecyclerView;
 import android.text.SpannableString;
 import android.text.style.UnderlineSpan;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -45,6 +46,7 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     @SuppressLint("ServiceCast")
     @Override
     public void InitView() {
+        Log.v("","Hello");
         context = this;
         txt_register = (TextView) findViewById(R.id.txt_register);
         txt_forgot_password = (TextView) findViewById(R.id.txt_forgot_password);
