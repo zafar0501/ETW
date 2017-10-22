@@ -60,7 +60,7 @@ public class SignUpActivity extends BaseActivity implements IResultView,View.OnC
         rcvValidationMessage = ValidationManager.setValidationRecyclerView(this);
 
         //On basis of server message, get will pass the custom code in the method
-        new ValidationManager().setValidationError(ErrorMessageUtility.getCustomErrorCode(AppsValidationMessage.ICommonError.NO_INTERNET), this);
+       // new ValidationManager().setValidationError(ErrorMessageUtility.getCustomErrorCode(AppsValidationMessage.ICommonError.NO_INTERNET), this);
 
     }
 
