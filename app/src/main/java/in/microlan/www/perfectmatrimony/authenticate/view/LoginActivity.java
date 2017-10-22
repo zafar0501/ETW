@@ -24,10 +24,8 @@ import java.util.List;
 import in.microlan.www.perfectmatrimony.R;
 import in.microlan.www.perfectmatrimony.common.base.BaseActivity;
 import in.microlan.www.perfectmatrimony.common.presenter.IResultView;
-import in.microlan.www.perfectmatrimony.common.validationMessage.AppsValidationMessage;
 import in.microlan.www.perfectmatrimony.common.validationMessage.ValidationAdapter;
 import in.microlan.www.perfectmatrimony.common.validationMessage.ValidationManager;
-import in.microlan.www.perfectmatrimony.utility.ErrorMessageUtility;
 
 
 public class LoginActivity extends BaseActivity implements IResultView, View.OnClickListener {
@@ -52,7 +50,7 @@ public class LoginActivity extends BaseActivity implements IResultView, View.OnC
     @SuppressLint("ServiceCast")
     @Override
     public void InitView() {
-        Log.v("","Hello");
+        Log.v("", "Hello");
         context = this;
         txt_register = (TextView) findViewById(R.id.txt_register);
         txt_forgot_password = (TextView) findViewById(R.id.txt_forgot_password);
@@ -75,7 +73,7 @@ public class LoginActivity extends BaseActivity implements IResultView, View.OnC
         rcvValidationMessage = ValidationManager.setValidationRecyclerView(this);
 
         //On basis of server message, get will pass the custom code in the method
-        new ValidationManager().setValidationError(ErrorMessageUtility.getCustomErrorCode(AppsValidationMessage.ICommonError.NO_INTERNET), this);
+        //new ValidationManager().setValidationError(ErrorMessageUtility.getCustomErrorCode(AppsValidationMessage.ICommonError.NO_INTERNET), this);
 
 
     }

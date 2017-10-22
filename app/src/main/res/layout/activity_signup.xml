@@ -7,10 +7,16 @@
     android:orientation="vertical">
 
     <ScrollView
+        android:id="@+id/scv_signup_scroll"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/whiteToo"
         android:orientation="vertical">
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -157,7 +163,15 @@
 
 
     </LinearLayout>
+            <include
+                android:id="@+id/vw_login_progressbar"
+                layout="@layout/view_progressbar"
+                android:visibility="gone" />
+
+            <include layout="@layout/layout_validation_recycler_view" />
+        </FrameLayout>
     </ScrollView>
+
 </LinearLayout>
 
 

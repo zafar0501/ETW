@@ -3,7 +3,7 @@
     <string name="action_settings">Settings</string>
     <string name="login">Log In</string>
     <string name="Signup">Sign Up</string>
-    <string name="username">Please Enter UserName</string>
+    <string name="username">Please Enter Mble num</string>
     <string name="password">Please Enter Password</string>
     <string name="forgotpassword">Forgot Password</string>
     <string name="forgot">Forgot</string>
