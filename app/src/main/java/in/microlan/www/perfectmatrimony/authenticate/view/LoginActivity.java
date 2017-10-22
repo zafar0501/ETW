@@ -19,11 +19,18 @@ import android.widget.TextView;
 
 import com.xwray.passwordview.PasswordView;
 
+import java.util.List;
+
 import in.microlan.www.perfectmatrimony.R;
 import in.microlan.www.perfectmatrimony.common.base.BaseActivity;
+import in.microlan.www.perfectmatrimony.common.presenter.IResultView;
+import in.microlan.www.perfectmatrimony.common.validationMessage.AppsValidationMessage;
+import in.microlan.www.perfectmatrimony.common.validationMessage.ValidationAdapter;
+import in.microlan.www.perfectmatrimony.common.validationMessage.ValidationManager;
+import in.microlan.www.perfectmatrimony.utility.ErrorMessageUtility;
 
 
-public class LoginActivity extends BaseActivity implements View.OnClickListener {
+public class LoginActivity extends BaseActivity implements IResultView, View.OnClickListener {
 
     private static final String TAG = LoginActivity.class.getSimpleName();
     private TextView txt_register, txt_forgot_password;
@@ -35,7 +42,6 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     private CheckBox checkBox;
     private Context context = LoginActivity.this;
     private PasswordView password;
-
 
     @Override
     public void onCreate(@Nullable Bundle savedInstanceState) {
@@ -53,12 +59,23 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
         password = (PasswordView) findViewById(R.id.pv_login_password);
         edt_username = (EditText) findViewById(R.id.edt_username);
 
+        //Initialization of Validation instance
+        ValidationManager.getValidationMessageInstance();
+
         SpannableString content = new SpannableString("Registered");
         content.setSpan(new UnderlineSpan(), 0, content.length(), 0);
         txt_register.setText(content);
 
         txt_register.setOnClickListener(this);
         txt_forgot_password.setOnClickListener(this);
+
+        scvloginScroll = (ScrollView) findViewById(R.id.scv_login_scroll);
+
+
+        rcvValidationMessage = ValidationManager.setValidationRecyclerView(this);
+
+        //On basis of server message, get will pass the custom code in the method
+        new ValidationManager().setValidationError(ErrorMessageUtility.getCustomErrorCode(AppsValidationMessage.ICommonError.NO_INTERNET), this);
 
 
     }
@@ -97,5 +114,29 @@ public class LoginActivity extends BaseActivity implements View.OnClickListener 
     @Override
     public void onBackPressed() {
         super.onBackPressed();
+    }
+
+    @Override
+    public void showResult(Object listDO) {
+
+    }
+
+    @Override
+    public void onDisplayMessage(String message) {
+
+    }
+
+    @Override
+    public void showResultList(List resultDOList) {
+
+    }
+
+    @Override
+    public void displayErrorList(List errorList) {
+        ValidationAdapter validationAdapter = new ValidationAdapter(errorList, this);
+        rcvValidationMessage.setAdapter(validationAdapter);
+        scvloginScroll.scrollTo(0, 0);
+        validationAdapter.notifyDataSetChanged();
+
     }
 }

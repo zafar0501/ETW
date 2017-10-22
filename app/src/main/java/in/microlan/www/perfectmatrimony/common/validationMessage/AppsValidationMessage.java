@@ -30,7 +30,7 @@ public class AppsValidationMessage {
 
 
     public interface IArchiveNotesError {
-        String ARCHIVE_NOTE_GOAL_MESSAGE_NOT_FOUND = "archive goal message not found";
+        String ARCHIVE_NOTE_GOAL_MESSAGE_NOT_FOUND = "goal message not found";
         String NOTE_COULD_NOT_ARCHIVED = "Note Could Not be Archived";
 
     }
@@ -55,16 +55,10 @@ public class AppsValidationMessage {
         String ERROR_ACCESSING_SERVER = "error accessing server";
         String ERROR_ACCESSING_SERVER_CAMEL = "Error Accessing Server";
         String NO_INTERNET = "internet connection not available";
-        String INTERNET_NOT_AVAILABLE = "Internet connection lost. Please reconnect";
+        String INTERNET_NOT_AVAILABLE = "Internet Connection not available";
         String TIMEOUT = "timeout";
 
-        String InvalidEmail = "please enter a valid email address";
-        String InvalidEmailADDRESS = "Please enter a valid email address";
-        String EmailError = "There was a problem resetting your password. Please try again.";
-
     }
-
-
 
    /* // Error Message struct UserInfo
     public static final String userNotFound = "User account not found";
@@ -83,18 +77,14 @@ public class AppsValidationMessage {
     public static final String goalNotRetrieve = "Goals could not be retrieved.";
     public static final String goalNotesNotRetrieve = "Goal notes could not be retrieved.";*/
 
-    //Error Message ForgotPassword
-    public static final String notFoundEmailId = "The email address you entered does not match any user accounts, please see your system admin for further help.";
 
     // Custom Message to show to user
 
     //Error Message Authentication
     public static final String loginNoService = "Error accessing server to login.";
     public static final String badCredentials = "Please check your login credentials.";
-
-
-    public static final String fingerPrintAuthDisabled = "Fingerprint disabled.";
-    public static final String fingerPrintAuthIdEnabled = "Fingerprint enabled.";
+    public static final String touchIdDisabled = "Touch ID disabled.";
+    public static final String touchIdEnabled = "Touch ID enabled.";
 
     public static final String touchIdPasscodeNotSetTitle = "Touch ID Isn't Set Up on This Device";
     public static final String touchIdPasscodeNotSetMessage = "To set up Touch ID on this device, go to Settings > Touch ID & Passcode and add a valid fingerprint.";
@@ -104,7 +94,7 @@ public class AppsValidationMessage {
     public static final String successTitle = "Your Request Has Been Sent!";
     public static final String successMessage = "Please check your email inbox";
     public static final String error = "There was a problem resetting your password. Please try again.";
-    public static String invalidEmail = "Please enter a valid email address";
+    public static final String invalidEmail = "Please enter a valid email address";
 
 
     // Error Message EnableTouchID
@@ -159,12 +149,5 @@ public class AppsValidationMessage {
     //Error Messgae GenericError
     public static final String retry = "Something went wrong. Please retry";
 
-    public interface IGoalChangeStatus {
-        public static final String goalStatusUpdatePermission = "you do not have permission to update";
-        public static final String goalActiveState = "goal must be active to update status";
-
-        public static final String displayGoalStatusUpdatePermission = "You do not have permission to update";
-        public static final String displayGoalActiveState = "Goal must be Active to update status";
-    }
 
 }

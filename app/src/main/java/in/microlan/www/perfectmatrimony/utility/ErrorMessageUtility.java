@@ -2,32 +2,25 @@ package in.microlan.www.perfectmatrimony.utility;
 
 
 
+import android.util.Log;
+
 import java.util.HashMap;
 
 import in.microlan.www.perfectmatrimony.common.validationMessage.AppsValidationMessage;
 
 public class ErrorMessageUtility {
 
+
+
     public static int getCustomErrorCode(String message) {
-
-        int errorCode = 0;
-        try {
-            if (message == null) {
-                errorCode = 0;
-            } else {
-                errorCode = ErrorMessageUtility.mapServerMessageWithCustomCode().get(message.toLowerCase());
-            }
-
-        } catch (Exception ex) {
-            errorCode = 1011;
-        }
-        return errorCode;
+        return ErrorMessageUtility.mapServerMessageWithCustomCode().get(message.toLowerCase());
     }
 
     public static String getUserDefinedMessage(int customErrorCode) {
+        Log.d("Core","Msg :"+ErrorMessageUtility.mapCustomCodeWithCustomMessage().get(customErrorCode));
+        String sed =ErrorMessageUtility.mapCustomCodeWithCustomMessage().get(customErrorCode);
         return ErrorMessageUtility.mapCustomCodeWithCustomMessage().get(customErrorCode);
     }
-
 
     private static HashMap<String, Integer> mapServerMessageWithCustomCode() {
 
@@ -50,13 +43,6 @@ public class ErrorMessageUtility {
         mapMessageCode.put(AppsValidationMessage.ICommonError.NO_INTERNET, 1010);
         mapMessageCode.put(AppsValidationMessage.ICommonError.TIMEOUT, 1011);
 
-        mapMessageCode.put(AppsValidationMessage.fingerPrintAuthIdEnabled.toLowerCase(), 1012);
-        mapMessageCode.put(AppsValidationMessage.fingerPrintAuthDisabled.toLowerCase(), 1013);
-        mapMessageCode.put(AppsValidationMessage.ICommonError.InvalidEmail, 1014);
-        mapMessageCode.put(AppsValidationMessage.notFoundEmailId.toLowerCase(), 1015);
-
-        mapMessageCode.put(AppsValidationMessage.IGoalChangeStatus.goalStatusUpdatePermission, 1016);
-        mapMessageCode.put(AppsValidationMessage.IGoalChangeStatus.goalActiveState, 1017);
 
         return mapMessageCode;
     }
@@ -83,14 +69,7 @@ public class ErrorMessageUtility {
         mapCodeMessage.put(1010, AppsValidationMessage.ICommonError.INTERNET_NOT_AVAILABLE);
         mapCodeMessage.put(1011, AppsValidationMessage.ICommonError.ERROR_ACCESSING_SERVER_CAMEL);
 
-        mapCodeMessage.put(1012, AppsValidationMessage.fingerPrintAuthIdEnabled);
-        mapCodeMessage.put(1013, AppsValidationMessage.fingerPrintAuthDisabled);
 
-        mapCodeMessage.put(1014, AppsValidationMessage.ICommonError.InvalidEmailADDRESS);
-        mapCodeMessage.put(1015, AppsValidationMessage.ICommonError.EmailError);
-
-        mapCodeMessage.put(1016, AppsValidationMessage.IGoalChangeStatus.displayGoalStatusUpdatePermission);
-        mapCodeMessage.put(1017, AppsValidationMessage.IGoalChangeStatus.displayGoalActiveState);
 
         return mapCodeMessage;
     }
