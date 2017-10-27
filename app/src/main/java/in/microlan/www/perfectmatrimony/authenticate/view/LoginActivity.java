@@ -12,6 +12,7 @@ import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.ScrollView;
@@ -33,6 +34,7 @@ public class LoginActivity extends BaseActivity implements IResultView, View.OnC
     private static final String TAG = LoginActivity.class.getSimpleName();
     private TextView txt_register, txt_forgot_password;
     private EditText edt_username;
+    private Button btn_login;
 
     //For the Validation we use Recycleview & ScrollView for UI Display
     private RecyclerView rcvValidationMessage;
@@ -50,13 +52,12 @@ public class LoginActivity extends BaseActivity implements IResultView, View.OnC
     @SuppressLint("ServiceCast")
     @Override
     public void InitView() {
-        Log.v("", "Hello");
         context = this;
         txt_register = (TextView) findViewById(R.id.txt_register);
         txt_forgot_password = (TextView) findViewById(R.id.txt_forgot_password);
         password = (PasswordView) findViewById(R.id.pv_login_password);
         edt_username = (EditText) findViewById(R.id.edt_username);
-        Log.e("LoginActivity", "shefali");
+        btn_login=(Button)findViewById(R.id.btn_login_signin);
         //Initialization of Validation instance
         ValidationManager.getValidationMessageInstance();
 
@@ -66,6 +67,7 @@ public class LoginActivity extends BaseActivity implements IResultView, View.OnC
 
         txt_register.setOnClickListener(this);
         txt_forgot_password.setOnClickListener(this);
+        btn_login.setOnClickListener(this);
 
         scvloginScroll = (ScrollView) findViewById(R.id.scv_login_scroll);
 
@@ -105,6 +107,9 @@ public class LoginActivity extends BaseActivity implements IResultView, View.OnC
 
             case R.id.txt_forgot_password:
                 startActivity(new Intent(context, ForgotPasswordActivity.class));
+                break;
+            case R.id.btn_login_signin:
+                startActivity(new Intent(context, HomeActivity.class));
                 break;
         }
     }

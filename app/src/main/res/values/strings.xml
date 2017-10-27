@@ -27,9 +27,17 @@
     <string name="pincode">Pincode</string>
     <string name="setpassword">Password</string>
 
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="new_password">New password</string>
     <string name="confirm_password">Confirm password</string>
     <string name="change_password">Change password</string>
+    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_news_feed">NewsFeedActivity</string>
+    <string name="title_activity_towards">TowardsActivity</string>
+    <string name="title_activity_community">CommunityActivity</string>
+    <string name="title_activity_ads">AdsActivity</string>
+    <string name="title_activity_help">HelpActivity</string>
 
 
 </resources>

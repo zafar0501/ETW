@@ -39,6 +39,34 @@
             android:label="@string/login"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
+        <activity
+            android:name=".authenticate.view.HomeActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".authenticate.view.SearchActivity"
+            android:label="@string/title_activity_search"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".authenticate.view.NewsFeedActivity"
+            android:label="@string/title_activity_news_feed"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".authenticate.view.TowardsActivity"
+            android:label="@string/title_activity_towards"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".authenticate.view.CommunityActivity"
+            android:label="@string/title_activity_community"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".authenticate.view.AdsActivity"
+            android:label="@string/title_activity_ads"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".authenticate.view.HelpActivity"
+            android:label="@string/title_activity_help"
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>
