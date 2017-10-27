@@ -56,7 +56,7 @@ public class LoginActivity extends BaseActivity implements IResultView, View.OnC
         txt_forgot_password = (TextView) findViewById(R.id.txt_forgot_password);
         password = (PasswordView) findViewById(R.id.pv_login_password);
         edt_username = (EditText) findViewById(R.id.edt_username);
-
+        Log.e("LoginActivity", "shefali");
         //Initialization of Validation instance
         ValidationManager.getValidationMessageInstance();
 

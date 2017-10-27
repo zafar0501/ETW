@@ -27,7 +27,7 @@ import in.microlan.www.perfectmatrimony.common.validationMessage.ValidationManag
 import in.microlan.www.perfectmatrimony.utility.ErrorMessageUtility;
 
 
-public class SignUpActivity extends BaseActivity implements IResultView,View.OnClickListener {
+public class SignUpActivity extends BaseActivity implements IResultView, View.OnClickListener {
 
     private TextView tool_title;
     private BottomNavigationView bnvFooter;
