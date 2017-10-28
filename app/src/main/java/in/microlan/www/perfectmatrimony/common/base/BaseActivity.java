@@ -25,5 +25,5 @@ public abstract class BaseActivity extends AppCompatActivity implements IBaseAct
 
     public abstract boolean onCreateOptionsMenu(Menu menu);
 
-    public abstract boolean onOptionsItemSelected(MenuItem item);
+
 }
