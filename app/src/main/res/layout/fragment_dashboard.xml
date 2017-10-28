@@ -9,7 +9,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        android:layout_marginTop="@dimen/_4sdp">
+        android:layout_marginTop="4dp">
 
         <in.microlan.www.perfectmatrimony.common.adapter.CustomViewPager
             android:id="@+id/viewPager"
@@ -21,7 +21,7 @@
             android:id="@+id/view"
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/tab_library_color" />
+            android:background="@color/colorPrimary" />
 
         <com.viewpagerindicator.TabPageIndicator
             android:id="@+id/homeTabIndicator"

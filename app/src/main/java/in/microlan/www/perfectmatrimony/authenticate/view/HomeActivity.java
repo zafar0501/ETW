@@ -111,6 +111,9 @@ public class HomeActivity extends AppCompatActivity
         } else if (id == R.id.nav_help) {
             intent = new Intent(new Intent(getApplicationContext(), HelpActivity.class));
 
+        }else if (id == R.id.nav_dashboard) {
+            intent = new Intent(new Intent(getApplicationContext(), DashboardActivity.class));
+
         }
         startActivity(intent);
 

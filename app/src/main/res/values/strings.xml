@@ -27,6 +27,7 @@
     <string name="pincode">Pincode</string>
     <string name="setpassword">Password</string>
     <string name="nullstr">""</string>
+    <string name="dashboard">Dashboard</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
     <string name="new_password">New password</string>

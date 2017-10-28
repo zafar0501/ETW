@@ -1,26 +1,18 @@
 package in.microlan.www.perfectmatrimony.authenticate.view;
 
-import android.app.Activity;
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.PersistableBundle;
-import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentActivity;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
-import android.util.AttributeSet;
 import android.util.Log;
 import android.view.KeyEvent;
-import android.view.Menu;
-import android.view.MenuItem;
 import android.view.View;
 import android.widget.RelativeLayout;
 
 import in.microlan.www.perfectmatrimony.R;
 import in.microlan.www.perfectmatrimony.common.adapter.CustomAlertDialog;
-import in.microlan.www.perfectmatrimony.common.base.BaseActivity;
 
 /**
  * Created by Shefali on 23/10/17.

@@ -40,6 +40,12 @@
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
         <activity
+            android:name=".authenticate.view.DashboardActivity"
+            android:label="@string/dashboard"
+            android:screenOrientation="portrait"
+            android:theme="@style/AppTheme" />
+
+        <activity
             android:name=".authenticate.view.HomeActivity"
             android:label=""
             android:theme="@style/AppTheme.NoActionBar" />

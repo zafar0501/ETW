@@ -8,16 +8,13 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-
 import com.viewpagerindicator.TabPageIndicator;
 
 import java.util.ArrayList;
 
 import in.microlan.www.perfectmatrimony.R;
-
 import in.microlan.www.perfectmatrimony.common.adapter.CustomViewPager;
 import in.microlan.www.perfectmatrimony.common.adapter.DashBoardAdapter;
-import in.microlan.www.perfectmatrimony.common.base.BaseFragment;
 
 /**
  * Created by Vishal on 11-05-2017.
