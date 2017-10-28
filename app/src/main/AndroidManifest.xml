@@ -61,7 +61,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".authenticate.view.AdsActivity"
-            android:label="@string/title_activity_ads"
+            android:label="@string/nullstr"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".authenticate.view.HelpActivity"

@@ -10,6 +10,7 @@
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="in.microlan.www.perfectmatrimony.authenticate.view.HomeActivity"
     tools:showIn="@layout/app_bar_home">
+
     <ScrollView
         android:layout_marginTop="25dp"
         android:background="@color/white"

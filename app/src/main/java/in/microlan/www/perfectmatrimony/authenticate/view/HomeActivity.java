@@ -17,16 +17,16 @@ import in.microlan.www.perfectmatrimony.R;
 
 
 public class HomeActivity extends AppCompatActivity
-        implements NavigationView.OnNavigationItemSelectedListener ,View.OnClickListener{
+        implements NavigationView.OnNavigationItemSelectedListener, View.OnClickListener {
     private Intent intent;
-    private ImageView IMG_SEARCH,IMG_NEWSFEED,IMG_TOWARDS,IMG_COMMUNITY,IMG_ADS,IMG_HELP;
+    private ImageView IMG_SEARCH, IMG_NEWSFEED, IMG_TOWARDS, IMG_COMMUNITY, IMG_ADS, IMG_HELP;
+    private ImageView back_image;
+    private Toolbar toolbar;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
@@ -38,12 +38,15 @@ public class HomeActivity extends AppCompatActivity
         navigationView.setNavigationItemSelectedListener(this);
 
 
-        IMG_SEARCH=(ImageView)findViewById(R.id.img_search);
-        IMG_NEWSFEED=(ImageView)findViewById(R.id.img_newsfeed);
-        IMG_TOWARDS=(ImageView)findViewById(R.id.img_towards);
-        IMG_COMMUNITY=(ImageView)findViewById(R.id.img_community);
-        IMG_ADS=(ImageView)findViewById(R.id.img_ads);
-        IMG_HELP=(ImageView)findViewById(R.id.img_help);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+        IMG_SEARCH = (ImageView) findViewById(R.id.img_search);
+        IMG_NEWSFEED = (ImageView) findViewById(R.id.img_newsfeed);
+        IMG_TOWARDS = (ImageView) findViewById(R.id.img_towards);
+        IMG_COMMUNITY = (ImageView) findViewById(R.id.img_community);
+        IMG_ADS = (ImageView) findViewById(R.id.img_ads);
+        IMG_HELP = (ImageView) findViewById(R.id.img_help);
 
         IMG_SEARCH.setOnClickListener(this);
         IMG_NEWSFEED.setOnClickListener(this);
@@ -51,6 +54,7 @@ public class HomeActivity extends AppCompatActivity
         IMG_COMMUNITY.setOnClickListener(this);
         IMG_ADS.setOnClickListener(this);
         IMG_HELP.setOnClickListener(this);
+
 
 
     }
@@ -68,6 +72,8 @@ public class HomeActivity extends AppCompatActivity
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         // Inflate the menu; this adds items to the action bar if it is present.
+        getMenuInflater().inflate(R.menu.home_history, menu);
+
         return true;
     }
 
@@ -113,6 +119,7 @@ public class HomeActivity extends AppCompatActivity
 
         }
         startActivity(intent);
+        overridePendingTransition(R.anim.trans_left_in, R.anim.trans_left_out);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -121,11 +128,10 @@ public class HomeActivity extends AppCompatActivity
 
     @Override
     public void onClick(View v) {
-        switch (v.getId())
-        {
+        switch (v.getId()) {
             case R.id.img_search:
                 intent = new Intent(new Intent(getApplicationContext(), SearchActivity.class));
-             break;
+                break;
             case R.id.img_newsfeed:
                 intent = new Intent(new Intent(getApplicationContext(), NewsFeedActivity.class));
                 break;
@@ -142,7 +148,12 @@ public class HomeActivity extends AppCompatActivity
                 intent = new Intent(new Intent(getApplicationContext(), HelpActivity.class));
                 break;
 
+
         }
         startActivity(intent);
+        overridePendingTransition(R.anim.trans_right_in, R.anim.trans_right_out);
+
     }
+
+
 }
