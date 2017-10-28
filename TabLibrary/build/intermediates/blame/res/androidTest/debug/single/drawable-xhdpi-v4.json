@@ -1,50 +1,26 @@
 [
     {
-        "merged": "/Users/zafarhussain/Desktop/Dekstop/20181005/TabLibrary/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_selected_holo.9.png",
-        "source": "/Users/zafarhussain/Desktop/Dekstop/20181005/TabLibrary/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_selected_holo.9.png"
+        "merged": "/Users/Shefali/Desktop/freelancerProjects/20181007/TabLibrary/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_unselected_holo.9.png",
+        "source": "/Users/Shefali/Desktop/freelancerProjects/20181007/TabLibrary/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_unselected_holo.9.png"
     },
     {
-        "merged": "/Users/zafarhussain/Desktop/Lalit(Microlan)/20181005/TabLibrary/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_unselected_focused_holo.9.png",
-        "source": "/Users/zafarhussain/Desktop/Lalit(Microlan)/20181005/TabLibrary/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_unselected_focused_holo.9.png"
+        "merged": "/Users/Shefali/Desktop/freelancerProjects/20181007/TabLibrary/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_unselected_pressed_holo.9.png",
+        "source": "/Users/Shefali/Desktop/freelancerProjects/20181007/TabLibrary/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_unselected_pressed_holo.9.png"
     },
     {
-        "merged": "/Users/zafarhussain/Desktop/Dekstop/20181005/TabLibrary/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_selected_pressed_holo.9.png",
-        "source": "/Users/zafarhussain/Desktop/Dekstop/20181005/TabLibrary/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_selected_pressed_holo.9.png"
+        "merged": "/Users/Shefali/Desktop/freelancerProjects/20181007/TabLibrary/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_selected_pressed_holo.9.png",
+        "source": "/Users/Shefali/Desktop/freelancerProjects/20181007/TabLibrary/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_selected_pressed_holo.9.png"
     },
     {
-        "merged": "/Users/zafarhussain/Desktop/Dekstop/20181005/TabLibrary/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_unselected_holo.9.png",
-        "source": "/Users/zafarhussain/Desktop/Dekstop/20181005/TabLibrary/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_unselected_holo.9.png"
+        "merged": "/Users/Shefali/Desktop/freelancerProjects/20181007/TabLibrary/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_selected_focused_holo.9.png",
+        "source": "/Users/Shefali/Desktop/freelancerProjects/20181007/TabLibrary/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_selected_focused_holo.9.png"
     },
     {
-        "merged": "/Users/zafarhussain/Desktop/Dekstop/20181005/TabLibrary/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_selected_focused_holo.9.png",
-        "source": "/Users/zafarhussain/Desktop/Dekstop/20181005/TabLibrary/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_selected_focused_holo.9.png"
+        "merged": "/Users/Shefali/Desktop/freelancerProjects/20181007/TabLibrary/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_selected_holo.9.png",
+        "source": "/Users/Shefali/Desktop/freelancerProjects/20181007/TabLibrary/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_selected_holo.9.png"
     },
     {
-        "merged": "/Users/zafarhussain/Desktop/Dekstop/20181005/TabLibrary/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_unselected_focused_holo.9.png",
-        "source": "/Users/zafarhussain/Desktop/Dekstop/20181005/TabLibrary/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_unselected_focused_holo.9.png"
-    },
-    {
-        "merged": "/Users/zafarhussain/Desktop/Lalit(Microlan)/20181005/TabLibrary/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_selected_holo.9.png",
-        "source": "/Users/zafarhussain/Desktop/Lalit(Microlan)/20181005/TabLibrary/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_selected_holo.9.png"
-    },
-    {
-        "merged": "/Users/zafarhussain/Desktop/Lalit(Microlan)/20181005/TabLibrary/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_selected_pressed_holo.9.png",
-        "source": "/Users/zafarhussain/Desktop/Lalit(Microlan)/20181005/TabLibrary/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_selected_pressed_holo.9.png"
-    },
-    {
-        "merged": "/Users/zafarhussain/Desktop/Dekstop/20181005/TabLibrary/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_unselected_pressed_holo.9.png",
-        "source": "/Users/zafarhussain/Desktop/Dekstop/20181005/TabLibrary/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_unselected_pressed_holo.9.png"
-    },
-    {
-        "merged": "/Users/zafarhussain/Desktop/Lalit(Microlan)/20181005/TabLibrary/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_unselected_pressed_holo.9.png",
-        "source": "/Users/zafarhussain/Desktop/Lalit(Microlan)/20181005/TabLibrary/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_unselected_pressed_holo.9.png"
-    },
-    {
-        "merged": "/Users/zafarhussain/Desktop/Lalit(Microlan)/20181005/TabLibrary/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_unselected_holo.9.png",
-        "source": "/Users/zafarhussain/Desktop/Lalit(Microlan)/20181005/TabLibrary/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_unselected_holo.9.png"
-    },
-    {
-        "merged": "/Users/zafarhussain/Desktop/Lalit(Microlan)/20181005/TabLibrary/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_selected_focused_holo.9.png",
-        "source": "/Users/zafarhussain/Desktop/Lalit(Microlan)/20181005/TabLibrary/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_selected_focused_holo.9.png"
+        "merged": "/Users/Shefali/Desktop/freelancerProjects/20181007/TabLibrary/build/intermediates/res/merged/androidTest/debug/drawable-xhdpi-v4/vpi__tab_unselected_focused_holo.9.png",
+        "source": "/Users/Shefali/Desktop/freelancerProjects/20181007/TabLibrary/build/intermediates/bundles/debug/res/drawable-xhdpi-v4/vpi__tab_unselected_focused_holo.9.png"
     }
 ]

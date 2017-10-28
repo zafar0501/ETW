@@ -282,7 +282,7 @@ public class HelperUtility {
         RequestOptions requestOptions = new RequestOptions();
         requestOptions.diskCacheStrategy(DiskCacheStrategy.NONE);
         requestOptions.skipMemoryCache(true);
-        requestOptions.placeholder(R.drawable.default_profile_pic);
+        requestOptions.placeholder(R.mipmap.zafar);
 
 
         final String fileName = authorId + "_profile.png";

@@ -2,22 +2,22 @@
 <items version="2" >
 
     <item
-        is-multidex="true"
-        jar="/Users/zafarhussain/Desktop/Lalit(Microlan)/20181005/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/Shefali/Desktop/freelancerProjects/20181007/TabLibrary/build/intermediates/bundles/default/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.2"
-        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
-        <dex dex="/Users/zafarhussain/Desktop/Lalit(Microlan)/20181005/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_b38e3c48a57ddac2e6118de880039799d7698c98/classes.dex" />
+        sha1="189bfc2b11258c962d806cd11db5e4ed2cf2a39e">
+        <dex dex="/Users/Shefali/Desktop/freelancerProjects/20181007/app/build/intermediates/pre-dexed/debug/classes_a2fc463544b54827500a9c10cdb58512c06265ae.jar" />
     </item>
     <item
-        is-multidex="true"
-        jar="/Users/zafarhussain/Desktop/Lalit(Microlan)/20181005/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
-        jumboMode="true"
+        is-multidex="false"
+        jar="/Users/Shefali/.android/build-cache/e9e901adbea8fe4332eab838d8875b0d9152da5a/output/jars/classes.jar"
+        jumboMode="false"
         optimize="true"
         revision="26.0.2"
-        sha1="8b9a074096e51f6f431e614b7292e2495b1ede95">
-        <dex dex="/Users/zafarhussain/Desktop/Lalit(Microlan)/20181005/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_17f959ace3fa1fdaba203d71ff453f501001f819/classes.dex" />
+        sha1="7be042dd2aa8157a2b63934902f472952d2ea1fe">
+        <dex dex="/Users/Shefali/Desktop/freelancerProjects/20181007/app/build/intermediates/pre-dexed/debug/classes_036bba1627041a2431f7207fd1a150f7ad14be85.jar" />
     </item>
 
 </items>
