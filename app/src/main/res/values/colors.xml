@@ -28,5 +28,6 @@
     <color name="headercolor">#aa7e57c2</color>
     <color name="sideBarGray">#ECECEC</color>
     <color name="whiteToo">#FBFBFB</color>
+    <color name="tab_library_color">#dbdbdb</color>
 
 </resources>
