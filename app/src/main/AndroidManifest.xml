@@ -21,7 +21,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".authenticate.view.SignUpActivity"
+        <activity
+            android:name=".authenticate.view.SignUpActivity"
             android:label="@string/Signup"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
@@ -34,8 +35,9 @@
             android:name=".authenticate.view.VerifyUsersActivity"
             android:label="@string/verify"
             android:screenOrientation="portrait"
-            android:theme="@style/AppTheme"/>
-        <activity android:name=".authenticate.view.LoginActivity"
+            android:theme="@style/AppTheme" />
+        <activity
+            android:name=".authenticate.view.LoginActivity"
             android:label="@string/login"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
@@ -55,7 +57,7 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".authenticate.view.NewsFeedActivity"
-            android:label="@string/title_activity_news_feed"
+            android:label=""
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".authenticate.view.TowardsActivity"
@@ -72,7 +74,11 @@
         <activity
             android:name=".authenticate.view.HelpActivity"
             android:label="@string/title_activity_help"
-            android:theme="@style/AppTheme.NoActionBar"/>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".authenticate.view.NewsFeedFilterActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+
     </application>
 
 </manifest>
