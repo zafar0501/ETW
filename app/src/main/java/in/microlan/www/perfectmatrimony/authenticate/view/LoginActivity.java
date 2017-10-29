@@ -23,10 +23,16 @@ import com.xwray.passwordview.PasswordView;
 import java.util.List;
 
 import in.microlan.www.perfectmatrimony.R;
+import in.microlan.www.perfectmatrimony.authenticate.model.AuthenticateDO;
 import in.microlan.www.perfectmatrimony.common.base.BaseActivity;
 import in.microlan.www.perfectmatrimony.common.presenter.IResultView;
+import in.microlan.www.perfectmatrimony.common.validationMessage.AppsValidationMessage;
 import in.microlan.www.perfectmatrimony.common.validationMessage.ValidationAdapter;
 import in.microlan.www.perfectmatrimony.common.validationMessage.ValidationManager;
+import in.microlan.www.perfectmatrimony.network.NetworkConstants;
+import in.microlan.www.perfectmatrimony.utility.ErrorMessageUtility;
+import in.microlan.www.perfectmatrimony.utility.HelperUtility;
+import retrofit2.Call;
 
 
 public class LoginActivity extends BaseActivity implements IResultView, View.OnClickListener {
@@ -74,9 +80,6 @@ public class LoginActivity extends BaseActivity implements IResultView, View.OnC
 
         rcvValidationMessage = ValidationManager.setValidationRecyclerView(this);
 
-        //On basis of server message, get will pass the custom code in the method
-        //new ValidationManager().setValidationError(ErrorMessageUtility.getCustomErrorCode(AppsValidationMessage.ICommonError.NO_INTERNET), this);
-
 
     }
 
@@ -109,7 +112,13 @@ public class LoginActivity extends BaseActivity implements IResultView, View.OnC
                 startActivity(new Intent(context, ForgotPasswordActivity.class));
                 break;
             case R.id.btn_login_signin:
-                startActivity(new Intent(context, HomeActivity.class));
+                if (HelperUtility.InternetCheck(context)) {
+                    startActivity(new Intent(context, HomeActivity.class));
+                } else {
+                    //On basis of server message, get will pass the custom code in the method
+                    new ValidationManager().setValidationError(ErrorMessageUtility.getCustomErrorCode(AppsValidationMessage.ICommonError.NO_INTERNET), this);
+                }
+
                 break;
         }
     }

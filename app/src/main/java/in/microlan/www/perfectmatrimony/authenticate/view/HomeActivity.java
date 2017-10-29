@@ -1,5 +1,6 @@
 package in.microlan.www.perfectmatrimony.authenticate.view;
 
+import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.NavigationView;
@@ -8,18 +9,25 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+import android.widget.ScrollView;
+import android.widget.Toast;
 
 import in.microlan.www.perfectmatrimony.R;
 
 
 public class HomeActivity extends AppCompatActivity
         implements NavigationView.OnNavigationItemSelectedListener ,View.OnClickListener{
+
     private Intent intent;
     private ImageView IMG_SEARCH,IMG_NEWSFEED,IMG_TOWARDS,IMG_COMMUNITY,IMG_ADS,IMG_HELP;
+    private ImageView IMG_DOWN_ARRAY;
+    private ScrollView scrollView;
+    private Context context;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +36,7 @@ public class HomeActivity extends AppCompatActivity
         Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
+        context=this;
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         ActionBarDrawerToggle toggle = new ActionBarDrawerToggle(
                 this, drawer, toolbar, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
@@ -44,6 +53,8 @@ public class HomeActivity extends AppCompatActivity
         IMG_COMMUNITY=(ImageView)findViewById(R.id.img_community);
         IMG_ADS=(ImageView)findViewById(R.id.img_ads);
         IMG_HELP=(ImageView)findViewById(R.id.img_help);
+        IMG_DOWN_ARRAY=(ImageView)findViewById(R.id.img_downarrow_focus);
+        scrollView = (ScrollView)findViewById(R.id.scv_login_scroll);
 
         IMG_SEARCH.setOnClickListener(this);
         IMG_NEWSFEED.setOnClickListener(this);
@@ -51,6 +62,7 @@ public class HomeActivity extends AppCompatActivity
         IMG_COMMUNITY.setOnClickListener(this);
         IMG_ADS.setOnClickListener(this);
         IMG_HELP.setOnClickListener(this);
+        IMG_DOWN_ARRAY.setOnClickListener(this);
 
 
     }
@@ -93,30 +105,29 @@ public class HomeActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_search) {
-            intent = new Intent(new Intent(getApplicationContext(), SearchActivity.class));
+            intent = new Intent(new Intent(context, SearchActivity.class));
 
         } else if (id == R.id.nav_newsfeed) {
-            intent = new Intent(new Intent(getApplicationContext(), NewsFeedActivity.class));
+            intent = new Intent(new Intent(context, NewsFeedActivity.class));
 
         } else if (id == R.id.nav_toward) {
 
-            intent = new Intent(new Intent(getApplicationContext(), TowardsActivity.class));
+            intent = new Intent(new Intent(context, TowardsActivity.class));
         } else if (id == R.id.nav_community) {
 
-            intent = new Intent(new Intent(getApplicationContext(), CommunityActivity.class));
+            intent = new Intent(new Intent(context, CommunityActivity.class));
         } else if (id == R.id.nav_ads) {
 
-            intent = new Intent(new Intent(getApplicationContext(), AdsActivity.class));
+            intent = new Intent(new Intent(context, AdsActivity.class));
 
         } else if (id == R.id.nav_help) {
-            intent = new Intent(new Intent(getApplicationContext(), HelpActivity.class));
+            intent = new Intent(new Intent(context, HelpActivity.class));
 
         }else if (id == R.id.nav_dashboard) {
-            intent = new Intent(new Intent(getApplicationContext(), DashboardActivity.class));
+            intent = new Intent(new Intent(context, DashboardActivity.class));
 
         }
         startActivity(intent);
-        overridePendingTransition(R.anim.trans_right_in, R.anim.trans_right_out);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -128,28 +139,42 @@ public class HomeActivity extends AppCompatActivity
         switch (v.getId())
         {
             case R.id.img_search:
-                intent = new Intent(new Intent(getApplicationContext(), SearchActivity.class));
+                intent = new Intent(new Intent(context, SearchActivity.class));
+                startActivity(intent);
                 break;
             case R.id.img_newsfeed:
-                intent = new Intent(new Intent(getApplicationContext(), NewsFeedActivity.class));
+                intent = new Intent(new Intent(context, NewsFeedActivity.class));
+                startActivity(intent);
                 break;
             case R.id.img_towards:
-                intent = new Intent(new Intent(getApplicationContext(), TowardsActivity.class));
+                intent = new Intent(new Intent(context, TowardsActivity.class));
+                startActivity(intent);
                 break;
             case R.id.img_community:
-                intent = new Intent(new Intent(getApplicationContext(), CommunityActivity.class));
+                intent = new Intent(new Intent(context, CommunityActivity.class));
+                startActivity(intent);
                 break;
             case R.id.img_ads:
-                intent = new Intent(new Intent(getApplicationContext(), AdsActivity.class));
+                intent = new Intent(new Intent(context, AdsActivity.class));
+                startActivity(intent);
                 break;
             case R.id.img_help:
-                intent = new Intent(new Intent(getApplicationContext(), HelpActivity.class));
+                intent = new Intent(new Intent(context, HelpActivity.class));
+                startActivity(intent);
                 break;
+            case R.id.img_downarrow_focus:
+                scrollView.scrollTo(0, scrollView.getBottom());
+                break;
+
+
+
 
 
 
         }
-        startActivity(intent);
-        overridePendingTransition(R.anim.trans_right_in, R.anim.trans_right_out);
+
+
+
     }
+
 }

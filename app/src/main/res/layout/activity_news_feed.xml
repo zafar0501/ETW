@@ -41,7 +41,7 @@
                 android:layout_marginRight="@dimen/_10sdp"
                 android:id="@+id/ivFilter"
                 android:padding="@dimen/_5sdp"
-                android:layout_width="50dp"
+                android:layout_width="40dp"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
                 android:src="@mipmap/whitefilter" />
