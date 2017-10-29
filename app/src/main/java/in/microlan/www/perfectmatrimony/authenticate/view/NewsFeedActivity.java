@@ -74,19 +74,19 @@ public class NewsFeedActivity extends BaseActivity implements View.OnClickListen
 
     private void prepareHomeData() {
         newsFeedList.clear();
-        NewsFeedModel home = new NewsFeedModel("News Title", "News Description.News Description.News Description.News Description.News Description.News Description.News Description.News Description. ", R.mipmap.ads);
+        NewsFeedModel home = new NewsFeedModel("ABP NEWS ","STAR News was launched on 18 February 1998. 3 ", R.mipmap.abpnews);
         newsFeedList.add(home);
-        home = new NewsFeedModel("News Title", "News Description.News Description.News Description.News Description.News Description.News Description.News Description.News Description. ", R.mipmap.ads);
+        home = new NewsFeedModel("AAJ TAK", "फिल्म 'सुल्तान' में एक पहलवान की भूमिका निभाने के लिए वजन बढ़ाने वाले अभिनेता सलमान खान का कहना है कि इसके बाद वजन को कम करना उनके लिए तकलीफदेह रहा. फिल्म में सलमान ने पहलवान सुल्तान का किरदार निभाया था.  ", R.mipmap.ndtvnews);
         newsFeedList.add(home);
-        home = new NewsFeedModel("News Title", "News Description.News Description.News Description.News Description.News Description.News Description.News Description.News Description. ", R.mipmap.ads);
+        home = new NewsFeedModel("STAR PARIVAR", "News Description.News Description.News Description.News Description.News Description.News Description.News Description.News Description. ", R.mipmap.ads);
         newsFeedList.add(home);
-        home = new NewsFeedModel("News Title", "News Description.News Description.News Description.News Description.News Description.News Description.News Description.News Description. ", R.mipmap.ads);
+        home = new NewsFeedModel("Zee NEWS ", "Zee News reported that some of the students from Democratic Students' Union (DSU) raised slogans such as \"Bharat Ki Barbadi\" (\"Destruction of India\") and \" Pakistan Zindabad\" (\"long live Pakistan\"). ", R.mipmap.zeetv);
         newsFeedList.add(home);
-        home = new NewsFeedModel("News Title", "News Description.News Description.News Description.News Description.News Description.News Description.News Description.News Description. ", R.mipmap.ads);
+        home = new NewsFeedModel("TENS SPORT", "Sony TEN is a cluster of sports television channels based in India. It generally refers to television channels branded as Sony TEN 1, Sony TEN 2 ", R.mipmap.tenssportnews);
         newsFeedList.add(home);
-        home = new NewsFeedModel("News Title", "News Description.News Description.News Description.News Description.News Description.News Description.News Description.News Description. ", R.mipmap.ads);
+        home = new NewsFeedModel("SONY TV", "Sony began in the wake of World War II. In 1946, Masaru Ibuka started an electronics shop in a department store building in Tokyo. The company started with a capital of ¥190,000[17] and a total of eight employees.[18] In May 1946", R.mipmap.sonytv);
         newsFeedList.add(home);
-        home = new NewsFeedModel("News Title", "News Description.News Description.News Description.News Description.News Description.News Description.News Description.News Description. ", R.mipmap.ads);
+        home = new NewsFeedModel("ZEE TV", "News Description.News Description.News Description.News Description.News Description.News Description.News Description.News Description. ", R.mipmap.zeenarathi);
         newsFeedList.add(home);
 
 
@@ -106,6 +106,8 @@ public class NewsFeedActivity extends BaseActivity implements View.OnClickListen
             case R.id.ivFilter:
                 intent = new Intent(NewsFeedActivity.this, NewsFeedFilterActivity.class);
                 startActivity(intent);
+                overridePendingTransition(R.anim.trans_right_in, R.anim.trans_right_out);
+                NewsFeedActivity.this.finish();
                 break;
         }
     }

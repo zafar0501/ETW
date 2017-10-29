@@ -116,6 +116,7 @@ public class HomeActivity extends AppCompatActivity
 
         }
         startActivity(intent);
+        overridePendingTransition(R.anim.trans_right_in, R.anim.trans_right_out);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);
@@ -149,5 +150,6 @@ public class HomeActivity extends AppCompatActivity
 
         }
         startActivity(intent);
+        overridePendingTransition(R.anim.trans_right_in, R.anim.trans_right_out);
     }
 }

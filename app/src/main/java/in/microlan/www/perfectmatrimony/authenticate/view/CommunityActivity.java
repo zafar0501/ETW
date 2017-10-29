@@ -1,6 +1,8 @@
 package in.microlan.www.perfectmatrimony.authenticate.view;
 
 import android.content.Intent;
+import android.os.Bundle;
+import android.support.annotation.Nullable;
 import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -10,10 +12,19 @@ import android.widget.ImageView;
 import in.microlan.www.perfectmatrimony.R;
 import in.microlan.www.perfectmatrimony.common.base.BaseActivity;
 
-public class CommunityActivity extends BaseActivity implements View.OnClickListener{
+public class CommunityActivity extends BaseActivity implements View.OnClickListener {
 
     private Toolbar toolbar;
     private ImageView back_Img;
+    private Intent intent;
+
+
+    @Override
+    public void onCreate(@Nullable Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        InitView();
+    }
+
     @Override
     protected int getLayoutResourceId() {
         return R.layout.activity_community;
@@ -36,17 +47,21 @@ public class CommunityActivity extends BaseActivity implements View.OnClickListe
         back_Img = toolbar.findViewById(R.id.menu_back);
         back_Img.setOnClickListener(this);
 
+
     }
+
 
     @Override
     public void onClick(View v) {
-        switch (v.getId())
-        {
-            case R.id.menu_back :
-                Intent intent = new Intent(CommunityActivity.this, HomeActivity.class);
+
+        switch (v.getId()) {
+            case R.id.menu_back:
+                intent = new Intent(CommunityActivity.this, HomeActivity.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.trans_left_in, R.anim.trans_left_out);
                 CommunityActivity.this.finish();
+                break;
+
         }
     }
 }

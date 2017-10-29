@@ -1,6 +1,5 @@
 package in.microlan.www.perfectmatrimony.authenticate.view;
 
-import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -9,16 +8,15 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
+
 import in.microlan.www.perfectmatrimony.R;
 import in.microlan.www.perfectmatrimony.common.base.BaseActivity;
 
-
 public class AdsActivity extends BaseActivity implements View.OnClickListener {
-    //Defining Variables
-    private Context context;
-    private ImageView back_image;
-    private Toolbar toolbar;
 
+    private Toolbar toolbar;
+    private ImageView back_Img;
+    private Intent intent;
 
 
     @Override
@@ -27,55 +25,27 @@ public class AdsActivity extends BaseActivity implements View.OnClickListener {
         InitView();
     }
 
-
     @Override
     protected int getLayoutResourceId() {
-
         return R.layout.activity_ads;
     }
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        // Inflate the menu; this adds items to the action bar if it is present.
-        getMenuInflater().inflate(R.menu.home_history, menu);
-
-        return true;
+        return false;
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-
-        int id = item.getItemId();
-
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.menu_home_history) {
-
-            return true;
-        }
-
-        return super.onOptionsItemSelected(item);
+        return false;
     }
-
 
     @Override
     public void InitView() {
-        context = this;
-
-        toolbar = (Toolbar) findViewById(R.id.ads_toolbar);
-        // View view = navigationView.getHeaderView(0);
+        toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
-         back_image = (ImageView) findViewById(R.id.ads_menu_back);
-
-        back_image.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(AdsActivity.this, HomeActivity.class);
-                startActivity(intent);
-                overridePendingTransition(R.anim.trans_right_in, R.anim.trans_right_out);
-                AdsActivity.this.finish();
-            }
-        });
+        back_Img = toolbar.findViewById(R.id.menu_back);
+        back_Img.setOnClickListener(this);
 
 
     }
@@ -84,5 +54,14 @@ public class AdsActivity extends BaseActivity implements View.OnClickListener {
     @Override
     public void onClick(View v) {
 
+        switch (v.getId()) {
+            case R.id.menu_back:
+                intent = new Intent(AdsActivity.this, HomeActivity.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.trans_left_in, R.anim.trans_left_out);
+                AdsActivity.this.finish();
+                break;
+
+        }
     }
 }

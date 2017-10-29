@@ -38,11 +38,19 @@
                 android:textStyle="bold" />
 
             <ImageView
+                android:layout_marginRight="@dimen/_10sdp"
                 android:id="@+id/ivFilter"
+                android:padding="@dimen/_5sdp"
+                android:layout_width="50dp"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:src="@mipmap/whitefilter" />
+            <ImageView
+                android:layout_marginRight="@dimen/_10sdp"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="right"
-                android:src="@drawable/ic_filter" />
+                android:src="@android:drawable/ic_menu_recent_history" />
         </android.support.v7.widget.Toolbar>
 
     </android.support.design.widget.AppBarLayout>

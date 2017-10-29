@@ -49,23 +49,23 @@
 
         <activity
             android:name=".authenticate.view.HomeActivity"
-            android:label=""
+            android:label="@string/nullstr"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".authenticate.view.SearchActivity"
-            android:label="@string/title_activity_search"
+            android:label="@string/nullstr"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".authenticate.view.NewsFeedActivity"
-            android:label=""
+            android:label="@string/nullstr"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".authenticate.view.TowardsActivity"
-            android:label="@string/title_activity_towards"
+            android:label="@string/nullstr"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".authenticate.view.CommunityActivity"
-            android:label="@string/title_activity_community"
+            android:label="@string/nullstr"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".authenticate.view.AdsActivity"
@@ -73,9 +73,10 @@
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
             android:name=".authenticate.view.HelpActivity"
-            android:label="@string/title_activity_help"
+            android:label="@string/nullstr"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
+            android:label="@string/nullstr"
             android:name=".authenticate.view.NewsFeedFilterActivity"
             android:theme="@style/AppTheme.NoActionBar" />
 

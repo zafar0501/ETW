@@ -36,6 +36,7 @@
     <string name="change_password">Change password</string>
     <string name="title_activity_search">SearchActivity</string>
     <string name="title_activity_news_feed">News Feeds</string>
+    <string name="title_activity_news_feed_filter">News Feeds Filter</string>
     <string name="title_activity_towards">TowardsActivity</string>
     <string name="title_activity_community">CommunityActivity</string>
     <string name="title_activity_ads">AdsActivity</string>
