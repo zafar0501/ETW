@@ -8,7 +8,6 @@ import android.support.annotation.Nullable;
 import android.support.v7.widget.RecyclerView;
 import android.text.SpannableString;
 import android.text.style.UnderlineSpan;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
@@ -23,16 +22,13 @@ import com.xwray.passwordview.PasswordView;
 import java.util.List;
 
 import in.microlan.www.perfectmatrimony.R;
-import in.microlan.www.perfectmatrimony.authenticate.model.AuthenticateDO;
 import in.microlan.www.perfectmatrimony.common.base.BaseActivity;
 import in.microlan.www.perfectmatrimony.common.presenter.IResultView;
 import in.microlan.www.perfectmatrimony.common.validationMessage.AppsValidationMessage;
 import in.microlan.www.perfectmatrimony.common.validationMessage.ValidationAdapter;
 import in.microlan.www.perfectmatrimony.common.validationMessage.ValidationManager;
-import in.microlan.www.perfectmatrimony.network.NetworkConstants;
 import in.microlan.www.perfectmatrimony.utility.ErrorMessageUtility;
 import in.microlan.www.perfectmatrimony.utility.HelperUtility;
-import retrofit2.Call;
 
 
 public class LoginActivity extends BaseActivity implements IResultView, View.OnClickListener {

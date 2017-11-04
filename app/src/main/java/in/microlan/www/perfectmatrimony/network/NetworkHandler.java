@@ -6,7 +6,7 @@ import android.util.Log;
 
 import com.google.gson.JsonObject;
 
-import in.microlan.www.perfectmatrimony.authenticate.model.AuthenticateDO;
+import in.microlan.www.perfectmatrimony.authenticate.model.AuthenticateModel;
 import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.Callback;
@@ -71,7 +71,7 @@ public class NetworkHandler<T> implements INetworkResult {
         switch (responseType) {
             case NetworkConstants.RESPONSE_TYPE.REFRESH_TOKEN:
 
-                AuthenticateDO authenticateDO = (AuthenticateDO) responseBody;
+                AuthenticateModel authenticateModel = (AuthenticateModel) responseBody;
 
 
                 //HIT the same API again
