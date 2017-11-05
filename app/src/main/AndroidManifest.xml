@@ -20,7 +20,6 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-
         <activity
             android:name=".authenticate.view.SignUpActivity"
             android:label="@string/Signup"
@@ -46,7 +45,6 @@
             android:label="@string/dashboard"
             android:screenOrientation="portrait"
             android:theme="@style/AppTheme" />
-
         <activity
             android:name=".authenticate.view.HomeActivity"
             android:label="@string/nullstr"
@@ -76,10 +74,13 @@
             android:label="@string/nullstr"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:label="@string/nullstr"
             android:name=".authenticate.view.NewsFeedFilterActivity"
+            android:label="@string/nullstr"
             android:theme="@style/AppTheme.NoActionBar" />
-
+        <activity
+            android:name=".authenticate.view.MyMatrimonyActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"></activity>
     </application>
 
 </manifest>

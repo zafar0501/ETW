@@ -16,7 +16,7 @@
     <string name="resend_otp">Resend OTP</string>
     <string name="register">Registered ?</string>
     <string name="not_yet_registered">Not yet registered</string>
-     <string name="close">Close</string>
+    <string name="close">Close</string>
     <string name="full_name">Full Name</string>
     <string name="mobile">Mobile Number</string>
     <string name="gender">Gender</string>
@@ -34,13 +34,14 @@
     <string name="new_password">New password</string>
     <string name="confirm_password">Confirm password</string>
     <string name="change_password">Change password</string>
-    <string name="title_activity_search">SearchActivity</string>
+    <string name="title_activity_search">Search</string>
     <string name="title_activity_news_feed">News Feeds</string>
     <string name="title_activity_news_feed_filter">News Feeds Filter</string>
-    <string name="title_activity_towards">TowardsActivity</string>
-    <string name="title_activity_community">CommunityActivity</string>
-    <string name="title_activity_ads">AdsActivity</string>
-    <string name="title_activity_help">HelpActivity</string>
+    <string name="title_activity_towards">Towards</string>
+    <string name="title_activity_community">Community</string>
+    <string name="title_activity_ads">ADS</string>
+    <string name="title_activity_help">Help</string>
+    <string name="title_activity_my_matrimony">MyMatrimony</string>
 
 
 </resources>

@@ -30,7 +30,6 @@ public class HelpActivity extends BaseActivity implements View.OnClickListener {
     private Intent intent;
     private RecyclerView rvHelp;
     private HelpRecyclerAdapter helpRecyclerAdapter;
-    private RecyclerView.LayoutManager mLayoutManager;
     private List<HelpModel> helpModelList = new ArrayList<>();
     private HelpModel helpModel;
 
@@ -65,13 +64,7 @@ public class HelpActivity extends BaseActivity implements View.OnClickListener {
         rvHelp = (RecyclerView) findViewById(R.id.recycler_view_help);
 
         helpRecyclerAdapter = new HelpRecyclerAdapter(helpModelList);
-        mLayoutManager = new LinearLayoutManager(this);
-        rvHelp.setLayoutManager(mLayoutManager);
-        rvHelp.setItemAnimator(new DefaultItemAnimator());
-        rvHelp.setAdapter(helpRecyclerAdapter);
         prepareHelpData();
-
-
         rvHelp.setHasFixedSize(true);
         RecyclerView.LayoutManager mLayoutManager = new LinearLayoutManager(getApplicationContext());
         rvHelp.setLayoutManager(mLayoutManager);

@@ -1,5 +1,9 @@
 <resources>
     <dimen name="fab_margin">16dp</dimen>
+    <dimen name="min_margin_top">10dp</dimen>
+    <dimen name="normal_margin_top">12dp</dimen>
+    <dimen name="max_margin_top">14dp</dimen>
+    <dimen name="extra_max_margin_top">16dp</dimen>
 
     //TextView Size Define
     <dimen name="txt_view_small">14dp</dimen>
@@ -19,7 +23,7 @@
     <dimen name="backdrop_title">30dp</dimen>
     <dimen name="backdrop_subtitle">18dp</dimen>
     <dimen name="card_margin">5dp</dimen>
-    <dimen name="card_album_radius">0dp</dimen>
+    <dimen name="card_album_radius">5dp</dimen>
     <dimen name="album_cover_height">160dp</dimen>
     <dimen name="title_padding">10dp</dimen>
     <dimen name="album_title">16dp</dimen>

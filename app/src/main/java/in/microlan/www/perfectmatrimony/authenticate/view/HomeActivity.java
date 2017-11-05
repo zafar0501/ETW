@@ -105,7 +105,7 @@ public class HomeActivity extends AppCompatActivity
         int id = item.getItemId();
 
         if (id == R.id.nav_search) {
-            intent = new Intent(new Intent(context, SearchActivity.class));
+            intent = new Intent(new Intent(context, MyMatrimonyActivity.class));
 
         } else if (id == R.id.nav_newsfeed) {
             intent = new Intent(new Intent(context, NewsFeedActivity.class));
