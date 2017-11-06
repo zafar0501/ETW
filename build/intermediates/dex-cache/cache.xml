@@ -10,5 +10,23 @@
         sha1="189bfc2b11258c962d806cd11db5e4ed2cf2a39e">
         <dex dex="/Users/zafarhussain/Desktop/Lalit(Microlan)/20181005/app/build/intermediates/pre-dexed/debug/classes_daeb3d899a694fc75b44e33f9bf9f4ef358a853f.jar" />
     </item>
+    <item
+        is-multidex="true"
+        jar="/Users/zafarhussain/Desktop/Lalit(Microlan)/20181005/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/zafarhussain/Desktop/Lalit(Microlan)/20181005/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_b38e3c48a57ddac2e6118de880039799d7698c98/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/zafarhussain/Desktop/Lalit(Microlan)/20181005/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="f2630ec2109970a05100b556245e9b5dfb67b512">
+        <dex dex="/Users/zafarhussain/Desktop/Lalit(Microlan)/20181005/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_17f959ace3fa1fdaba203d71ff453f501001f819/classes.dex" />
+    </item>
 
 </items>

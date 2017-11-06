@@ -24,14 +24,16 @@ public class NewsFeedRecyclerAdapter extends RecyclerView.Adapter<NewsFeedRecycl
 
 
     public class MyViewHolder extends RecyclerView.ViewHolder {
-        public TextView title, desc;
-        public ImageView icon;
+        public TextView title, desc, tvLikes;
+        public ImageView icon, ivLike;
 
         public MyViewHolder(View view) {
             super(view);
             title = (TextView) view.findViewById(R.id.item1);
             desc = (TextView) view.findViewById(R.id.desc1);
+            tvLikes = (TextView) view.findViewById(R.id.tvLikes);
             icon = (ImageView) view.findViewById(R.id.icon);
+            ivLike = (ImageView) view.findViewById(R.id.ivLike);
         }
     }
 
@@ -53,7 +55,9 @@ public class NewsFeedRecyclerAdapter extends RecyclerView.Adapter<NewsFeedRecycl
         NewsFeedModel home = newsFeedlList.get(position);
         holder.title.setText(home.getTitle());
         holder.desc.setText(home.getDesc());
+        holder.tvLikes.setText(home.getLikesCount());
         holder.icon.setImageResource(home.getIcon());
+        holder.ivLike.setImageResource(home.getLikeStatus());
 
     }
 

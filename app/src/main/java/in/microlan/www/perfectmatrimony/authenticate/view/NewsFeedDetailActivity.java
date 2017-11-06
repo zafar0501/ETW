@@ -8,7 +8,7 @@ import in.microlan.www.perfectmatrimony.common.base.BaseActivity;
  * Created by Shefali on 03/11/17.
  */
 
-public class NewsFeedDetailActivity extends BaseActivity{
+public class NewsFeedDetailActivity extends BaseActivity {
     @Override
     public void InitView() {
 
