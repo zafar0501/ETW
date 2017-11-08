@@ -1,5 +1,4 @@
 package in.microlan.www.perfectmatrimony.authenticate.view;
-
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,8 +15,17 @@ import android.view.View;
 import android.widget.ImageView;
 import android.widget.ScrollView;
 import android.widget.Toast;
-
 import in.microlan.www.perfectmatrimony.R;
+import in.microlan.www.perfectmatrimony.authenticate.view.AdsActivity;
+import in.microlan.www.perfectmatrimony.authenticate.view.ChangePasswordActivity;
+import in.microlan.www.perfectmatrimony.authenticate.view.CommunityActivity;
+import in.microlan.www.perfectmatrimony.authenticate.view.DashboardActivity;
+import in.microlan.www.perfectmatrimony.authenticate.view.HelpActivity;
+import in.microlan.www.perfectmatrimony.authenticate.view.MyMatrimonyActivity;
+import in.microlan.www.perfectmatrimony.authenticate.view.NewsFeedActivity;
+import in.microlan.www.perfectmatrimony.authenticate.view.SearchActivity;
+import in.microlan.www.perfectmatrimony.authenticate.view.TowardsActivity;
+import in.microlan.www.perfectmatrimony.authenticate.view.VerifyUsersActivity;
 
 
 public class HomeActivity extends AppCompatActivity
@@ -102,32 +110,41 @@ public class HomeActivity extends AppCompatActivity
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
         // Handle navigation view item clicks here.
+
+
+
+
         int id = item.getItemId();
 
-        if (id == R.id.nav_search) {
+        if (id == R.id.nav_mymatrimony) {
             intent = new Intent(new Intent(context, MyMatrimonyActivity.class));
+            startActivity(intent);
 
-        } else if (id == R.id.nav_newsfeed) {
-            intent = new Intent(new Intent(context, NewsFeedActivity.class));
+        }   else if (id == R.id.nav_verify) {
 
-        } else if (id == R.id.nav_toward) {
+            intent = new Intent(new Intent(context, VerifyUsersActivity.class));
+            startActivity(intent);
 
-            intent = new Intent(new Intent(context, TowardsActivity.class));
-        } else if (id == R.id.nav_community) {
-
-            intent = new Intent(new Intent(context, CommunityActivity.class));
-        } else if (id == R.id.nav_ads) {
-
-            intent = new Intent(new Intent(context, AdsActivity.class));
-
-        } else if (id == R.id.nav_help) {
-            intent = new Intent(new Intent(context, HelpActivity.class));
+        } else if (id == R.id.nav_changepassword) {
+            intent = new Intent(new Intent(context, ChangePasswordActivity.class));
+            startActivity(intent);
 
         }else if (id == R.id.nav_dashboard) {
             intent = new Intent(new Intent(context, DashboardActivity.class));
-
+            startActivity(intent);
+        }else if (id == R.id.nav_send) {
+            Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+            sharingIntent.setType("text/plain");
+            sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Text");
+            sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Subject");
+            startActivity(Intent.createChooser(sharingIntent, "Share using"));
+        }else if (id == R.id.nav_share) {
+            Intent sharingIntent = new Intent(Intent.ACTION_SEND);
+            sharingIntent.setType("text/plain");
+            sharingIntent.putExtra(android.content.Intent.EXTRA_TEXT, "Text");
+            sharingIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, "Subject");
+            startActivity(Intent.createChooser(sharingIntent, "Share using"));
         }
-        startActivity(intent);
 
         DrawerLayout drawer = (DrawerLayout) findViewById(R.id.drawer_layout);
         drawer.closeDrawer(GravityCompat.START);

@@ -5,32 +5,20 @@
 
         <item
             android:id="@+id/nav_dashboard"
-            android:icon="@drawable/ic_menu_send"
+            android:icon="@android:drawable/ic_input_add"
             android:title="@string/dashboard" />
         <item
-            android:id="@+id/nav_search"
-            android:icon="@drawable/ic_menu_camera"
-            android:title="Search" />
+            android:id="@+id/nav_mymatrimony"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="@string/app_name" />
         <item
-            android:id="@+id/nav_newsfeed"
-            android:icon="@drawable/ic_menu_gallery"
-            android:title="News Fedd" />
+            android:id="@+id/nav_changepassword"
+            android:icon="@android:drawable/ic_menu_revert"
+            android:title="change Password" />
         <item
-            android:id="@+id/nav_toward"
-            android:icon="@drawable/ic_menu_slideshow"
-            android:title="Towards" />
-        <item
-            android:id="@+id/nav_community"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Community" />
-        <item
-            android:id="@+id/nav_ads"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Ads" />
-        <item
-            android:id="@+id/nav_help"
-            android:icon="@drawable/ic_menu_manage"
-            android:title="Help" />
+            android:id="@+id/nav_verify"
+            android:icon="@android:drawable/ic_menu_edit"
+            android:title="Verify User" />
     </group>
 
     <item android:title="Communicate">

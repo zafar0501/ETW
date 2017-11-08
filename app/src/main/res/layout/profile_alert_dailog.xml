@@ -1,6 +1,45 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="250dp"
+    android:layout_height="400dp"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    android:weightSum="1">
 
+    <TextView
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:textColor="@color/white"
+        android:text="Select The Material Status"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:layout_weight=".3"
+        android:id="@+id/listView_ms"
+        android:entries="@array/Material_Status"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
+    <TextView
+        android:layout_marginTop="@dimen/_15sdp"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:textColor="@color/white"
+        android:text="Select Age "
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <ListView
+        android:layout_weight=".7"
+        android:id="@+id/listView_age"
+        android:entries="@array/Age_Status"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"/>
 </LinearLayout>

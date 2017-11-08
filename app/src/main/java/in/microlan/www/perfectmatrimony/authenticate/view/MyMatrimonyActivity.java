@@ -1,19 +1,26 @@
 package in.microlan.www.perfectmatrimony.authenticate.view;
 
+import android.app.Dialog;
 import android.content.Context;
+import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.design.widget.FloatingActionButton;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.DividerItemDecoration;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
+import android.view.LayoutInflater;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import java.util.ArrayList;
@@ -47,6 +54,7 @@ public class MyMatrimonyActivity extends BaseActivity implements View.OnClickLis
     private List<MyMatrimonyModel> myMatrimonyModelList_Features_Profile  = new ArrayList<>();
     private MyMatrimonyModel myMatrimonyModel;
     private Context context;
+    private TextView txt_edit_option;
 
 
     @Override
@@ -77,7 +85,8 @@ public class MyMatrimonyActivity extends BaseActivity implements View.OnClickLis
         setSupportActionBar(toolbar);
         back_Img = toolbar.findViewById(R.id.menu_back);
         back_Img.setOnClickListener(this);
-
+        txt_edit_option= (TextView) findViewById(R.id.edit_option);
+        txt_edit_option.setOnClickListener(this);
         rc_succes_story = (RecyclerView) findViewById(R.id.recycler_view_sucess_story);
         rc_newest_profile = (RecyclerView) findViewById(R.id.recycler_view_new_profile);
         rc_feautres_profile = (RecyclerView) findViewById(R.id.recycler_view_feautes_profile);
@@ -221,9 +230,22 @@ public class MyMatrimonyActivity extends BaseActivity implements View.OnClickLis
                 overridePendingTransition(R.anim.trans_left_in, R.anim.trans_left_out);
                 MyMatrimonyActivity.this.finish();
                 break;
+            case R.id.edit_option:
+                showChangeLangDialog();
+                break;
+
 
         }
 
+    }
+
+    private void showChangeLangDialog() {
+        // custom dialog
+        final Dialog openDialog = new Dialog(context);
+        openDialog.setContentView(R.layout.profile_alert_dailog);
+        openDialog.setTitle("MyMatrimony");
+
+        openDialog.show();
     }
 
 
