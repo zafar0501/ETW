@@ -9,8 +9,12 @@
             android:title="@string/dashboard" />
         <item
             android:id="@+id/nav_mymatrimony"
-            android:icon="@android:drawable/ic_menu_search"
+            android:icon="@mipmap/matrimony_three"
             android:title="@string/app_name" />
+        <item
+            android:id="@+id/nav_user_main_profile_page"
+            android:icon="@android:drawable/ic_menu_search"
+            android:title="@string/title_activity_user_main_profile_page" />
         <item
             android:id="@+id/nav_changepassword"
             android:icon="@android:drawable/ic_menu_revert"

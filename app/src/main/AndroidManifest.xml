@@ -2,6 +2,9 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="in.microlan.www.perfectmatrimony">
 
+    <!-- To access Google+ APIs: -->
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/matrimony_three"
@@ -80,7 +83,14 @@
         <activity
             android:name=".authenticate.view.MyMatrimonyActivity"
             android:label=""
-            android:theme="@style/AppTheme.NoActionBar"></activity>
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".authenticate.view.UserMainProfilePageActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"/>
+        <activity android:name=".authenticate.view.ChangePasswordActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar"/>
     </application>
 
 </manifest>

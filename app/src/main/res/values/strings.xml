@@ -28,6 +28,7 @@
     <string name="pincode">Pincode</string>
     <string name="setpassword">Password</string>
     <string name="nullstr">""</string>
+    <string name="str_home">"Home"</string>
     <string name="dashboard">Dashboard</string>
     <string name="navigation_drawer_open">Open navigation drawer</string>
     <string name="navigation_drawer_close">Close navigation drawer</string>
@@ -42,6 +43,11 @@
     <string name="title_activity_ads">ADS</string>
     <string name="title_activity_help">Help</string>
     <string name="title_activity_my_matrimony">MyMatrimony</string>
+    <string name="title_activity_user_main_profile_page">MainProfilePage</string>
+    <string name="title_matches">Matches</string>
+    <string name="title_new_matches">New Matches</string>
+    <string name="title_shortlisted">Shortlisted</string>
+    <string name="title_viewed">Viewed</string>
 
 
 </resources>

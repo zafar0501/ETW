@@ -42,6 +42,7 @@ public class TowardsActivity extends BaseActivity implements View.OnClickListene
 
     @Override
     public void InitView() {
+
         toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         back_Img = toolbar.findViewById(R.id.menu_back);

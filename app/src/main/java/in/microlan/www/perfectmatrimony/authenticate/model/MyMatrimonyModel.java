@@ -7,7 +7,6 @@ package in.microlan.www.perfectmatrimony.authenticate.model;
 public class MyMatrimonyModel {
 
     private String Name, Age;
-
     private String icon_url;
 
     public MyMatrimonyModel(String name, String age,String icon_url) {

@@ -70,15 +70,12 @@ public class StringConstant {
 
     public interface FragmentTag {
 
-        String HOME_DETAIL_TAG = "homeDetailTag";
-        String NOTES_LIST_TAG = "notesListTag";
-        String GOALS_LIST_TAG = "goalsListTag";
-        String TNC_LIST_TAG = "tncListTag";
-        String GOALS_NOTES_LIST_TAG = "goalsNotesListTag";
-        String GOALS_NOTES_REPLY_TAG = "goalsNotesReplyTag";
-        String CHANGE_GOALS_STATUS_TAG = "changeGoalStatusTag";
-        String FORGOT_PASSWORD_TAG = "forgotpasswordTag";
-        String MULTIUSER_TAG = "multiuserTag";
+        String USER_MAIN_PROFILE_PAGE_TAG = "UserMainProfilePageActivity";
+        String MATCHES_TAG = "Matches";
+        String NEW_MATCHES_TAG = "New Matches";
+        String SHORTLISTED_TAG = "Shortlisted";
+        String VIEWED_TAG = "Viewed";
+
     }
 
     public interface IFireBase {

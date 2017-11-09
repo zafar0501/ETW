@@ -8,24 +8,13 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.ScrollView;
-import android.widget.Toast;
+
 import in.microlan.www.perfectmatrimony.R;
-import in.microlan.www.perfectmatrimony.authenticate.view.AdsActivity;
-import in.microlan.www.perfectmatrimony.authenticate.view.ChangePasswordActivity;
-import in.microlan.www.perfectmatrimony.authenticate.view.CommunityActivity;
-import in.microlan.www.perfectmatrimony.authenticate.view.DashboardActivity;
-import in.microlan.www.perfectmatrimony.authenticate.view.HelpActivity;
-import in.microlan.www.perfectmatrimony.authenticate.view.MyMatrimonyActivity;
-import in.microlan.www.perfectmatrimony.authenticate.view.NewsFeedActivity;
-import in.microlan.www.perfectmatrimony.authenticate.view.SearchActivity;
-import in.microlan.www.perfectmatrimony.authenticate.view.TowardsActivity;
-import in.microlan.www.perfectmatrimony.authenticate.view.VerifyUsersActivity;
 
 
 public class HomeActivity extends AppCompatActivity
@@ -127,6 +116,11 @@ public class HomeActivity extends AppCompatActivity
 
         } else if (id == R.id.nav_changepassword) {
             intent = new Intent(new Intent(context, ChangePasswordActivity.class));
+            startActivity(intent);
+
+        }
+        else if (id == R.id.nav_user_main_profile_page) {
+            intent = new Intent(new Intent(context, UserMainProfilePageActivity.class));
             startActivity(intent);
 
         }else if (id == R.id.nav_dashboard) {
