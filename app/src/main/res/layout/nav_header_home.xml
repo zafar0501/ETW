@@ -12,15 +12,20 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     android:theme="@style/ThemeOverlay.AppCompat.Dark">
 
-    <ImageView
 
-        android:src="@mipmap/zafar"
-        android:layout_width="75dp"
-        android:layout_height="75dp" />
+<ImageView
+    android:padding="@dimen/_10sdp"
+    android:layout_width="100dp"
+    android:layout_height="100dp"
+    android:src="@mipmap/zafar"
+
+    />
 
 
 
     <TextView
+        android:textStyle="bold"
+        android:textSize="@dimen/_14sdp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:paddingTop="@dimen/nav_header_vertical_spacing"

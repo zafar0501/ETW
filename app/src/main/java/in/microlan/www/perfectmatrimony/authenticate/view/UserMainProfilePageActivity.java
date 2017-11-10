@@ -3,9 +3,12 @@ package in.microlan.www.perfectmatrimony.authenticate.view;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
 import android.content.Intent;
+import android.graphics.Color;
 import android.os.Bundle;
+import android.os.Handler;
 import android.support.annotation.NonNull;
 import android.support.design.widget.BottomNavigationView;
+import android.support.design.widget.NavigationView;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.Toolbar;
@@ -26,41 +29,16 @@ import in.microlan.www.perfectmatrimony.common.adapter.UserProfileRecyclerAdapte
 import in.microlan.www.perfectmatrimony.common.constant.StringConstant;
 import in.microlan.www.perfectmatrimony.utility.HelperUtility;
 
-public class UserMainProfilePageActivity extends AppCompatActivity implements View.OnClickListener{
+public class UserMainProfilePageActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener, BottomNavigationView.OnNavigationItemSelectedListener,View.OnClickListener{
 
     private TextView mTextMessage;
     private Toolbar toolbar;
     private ImageView menu_home,menu_chat,menu_bell;
+    private BottomNavigationView navigation;
 
 
 
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener
-            = new BottomNavigationView.OnNavigationItemSelectedListener() {
 
-        @Override
-        public boolean onNavigationItemSelected(@NonNull MenuItem item) {
-            switch (item.getItemId()) {
-                case R.id.navigation_matches:
-                    mTextMessage.setText(R.string.title_matches);
-                    matchesFragment();
-                    return true;
-                case R.id.navigation_new_matches:
-                    mTextMessage.setText(R.string.title_new_matches);
-                    newmatchesFragment();
-                    return true;
-                case R.id.navigation_shortlisted:
-                    mTextMessage.setText(R.string.title_shortlisted);
-                    shortlistedFragment();
-                    return true;
-                case R.id.navigation_viewed:
-                    mTextMessage.setText(R.string.title_viewed);
-                    viewedFragment();
-                    return true;
-            }
-            return false;
-        }
-
-    };
 
     private void matchesFragment() {
             HelperUtility.ReplaceFragmentWithoutBackStack(getSupportFragmentManager(), R.id.fl_home_container,
@@ -88,8 +66,8 @@ public class UserMainProfilePageActivity extends AppCompatActivity implements Vi
         setContentView(R.layout.activity_user_main_profile_page);
 
         mTextMessage = (TextView) findViewById(R.id.message);
-        BottomNavigationView navigation = (BottomNavigationView) findViewById(R.id.navigation);
-        navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
+        navigation = (BottomNavigationView) findViewById(R.id.navigation);
+        navigation.setOnNavigationItemSelectedListener(this);
         matchesFragment();
 
         toolbar = (Toolbar) findViewById(R.id.toolbar);
@@ -127,4 +105,28 @@ public class UserMainProfilePageActivity extends AppCompatActivity implements Vi
             break;
         }
     }
+
+    @Override
+    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+        switch (item.getItemId()) {
+            case R.id.navigation_matches:
+                mTextMessage.setText(R.string.title_matches);
+                matchesFragment();
+                return true;
+            case R.id.navigation_new_matches:
+                mTextMessage.setText(R.string.title_new_matches);
+                newmatchesFragment();
+                return true;
+            case R.id.navigation_shortlisted:
+                mTextMessage.setText(R.string.title_shortlisted);
+                shortlistedFragment();
+                return true;
+            case R.id.navigation_viewed:
+                mTextMessage.setText(R.string.title_viewed);
+                viewedFragment();
+                return true;
+        }
+        return  true;
+    }
+
 }

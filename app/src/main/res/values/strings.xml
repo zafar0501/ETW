@@ -48,6 +48,9 @@
     <string name="title_new_matches">New Matches</string>
     <string name="title_shortlisted">Shortlisted</string>
     <string name="title_viewed">Viewed</string>
+    <string name="title_basic_details">Basic Details</string>
+    <string name="title_religion">Religion Details</string>
+    <string name="title_carrier_details">Carrier Details</string>
 
 
 </resources>
