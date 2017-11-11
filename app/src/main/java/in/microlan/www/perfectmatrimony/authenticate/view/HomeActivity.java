@@ -162,7 +162,7 @@ public class HomeActivity extends AppCompatActivity
                 startActivity(intent);
                 break;
             case R.id.img_community:
-                intent = new Intent(new Intent(context, CommunityActivity.class));
+                intent = new Intent(new Intent(context, CommunityHelperActivity.class));
                 startActivity(intent);
                 break;
             case R.id.img_ads:

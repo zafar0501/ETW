@@ -61,6 +61,15 @@ public class HelperUtility {
         return nf != null && nf.isConnected();
     }
 
+    public static boolean isBlank(String input) {
+        if (input == null) {
+            return true;
+        }
+        if (input.trim().length() == 0) {
+            return true;
+        }
+        return false;
+    }
 
     public static void ReplaceFragmentWithoutBackStack(FragmentManager fragmentManager, int containerId, Fragment fragment, String Tag) {
         fragmentManager.beginTransaction().replace(containerId, fragment, Tag).commit();

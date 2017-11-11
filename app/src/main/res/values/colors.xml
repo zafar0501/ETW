@@ -30,6 +30,7 @@
     <color name="whiteToo">#FBFBFB</color>
     <color name="tab_library_color">#dbdbdb</color>
     <color name="title">#4c4c4c</color>
+    <color name="grey_text">#c1c1c1</color>
     <color name="tab_checked">#FFFFFF</color>
     <color name="tab_unchecked">#000000</color>
 </resources>

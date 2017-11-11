@@ -1,12 +1,15 @@
 package in.microlan.www.perfectmatrimony.common.adapter;
 
 
+import android.app.Activity;
+import android.support.v7.widget.CardView;
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import java.util.List;
@@ -21,11 +24,12 @@ import in.microlan.www.perfectmatrimony.authenticate.model.NewsFeedModel;
 public class NewsFeedRecyclerAdapter extends RecyclerView.Adapter<NewsFeedRecyclerAdapter.MyViewHolder> {
 
     private List<NewsFeedModel> newsFeedlList;
+    private Activity activity;
 
-
-    public class MyViewHolder extends RecyclerView.ViewHolder {
+    public class MyViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         public TextView title, desc, tvLikes;
         public ImageView icon, ivLike;
+        CardView cvNewsfeedItem;
 
         public MyViewHolder(View view) {
             super(view);
@@ -34,12 +38,49 @@ public class NewsFeedRecyclerAdapter extends RecyclerView.Adapter<NewsFeedRecycl
             tvLikes = (TextView) view.findViewById(R.id.tvLikes);
             icon = (ImageView) view.findViewById(R.id.icon);
             ivLike = (ImageView) view.findViewById(R.id.ivLike);
+            cvNewsfeedItem = (CardView) view.findViewById(R.id.cvNewsfeedItem);
+            view.setOnClickListener(this);
+            ivLike.setOnClickListener(this);
+            icon.setOnClickListener(this);
+
+
         }
+
+
+        @Override
+        public void onClick(View v) {
+
+            switch (v.getId())
+            {
+                case R.id.ivLike:
+                {
+                    Toast.makeText(activity, "Like Button Click", Toast.LENGTH_SHORT).show();
+                }
+                break;
+                case R.id.icon:
+                {
+                    Toast.makeText(activity, "Icon Button Click", Toast.LENGTH_SHORT).show();
+                }
+                break;
+            }
+//            clickListener.onClick(v, getPosition(), false);
+
+
+        }
+
+        /*@Override
+        public void onClick(View v) {
+            Intent intent = new Intent(v.getContext(), NewsDetailActivity.class);
+            v.getContext().startActivity(intent);
+            activity.overridePendingTransition(R.anim.trans_right_in, R.anim.trans_right_out);
+
+        }*/
     }
 
 
-    public NewsFeedRecyclerAdapter(List<NewsFeedModel> newsFeedlList) {
+    public NewsFeedRecyclerAdapter(List<NewsFeedModel> newsFeedlList, Activity activity) {
         this.newsFeedlList = newsFeedlList;
+        this.activity = activity;
     }
 
     @Override
@@ -58,6 +99,30 @@ public class NewsFeedRecyclerAdapter extends RecyclerView.Adapter<NewsFeedRecycl
         holder.tvLikes.setText(home.getLikesCount());
         holder.icon.setImageResource(home.getIcon());
         holder.ivLike.setImageResource(home.getLikeStatus());
+        holder.cvNewsfeedItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
+        holder.cvNewsfeedItem.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                switch (v.getId()) {
+                    case R.id.ivLike: {
+                        Toast.makeText(activity, "Like Button Click", Toast.LENGTH_SHORT).show();
+                    }
+                    break;
+                    case R.id.icon: {
+                        Toast.makeText(activity, "Icon Button Click", Toast.LENGTH_SHORT).show();
+                    }
+                    break;
+                }
+
+            }
+
+        });
 
     }
 
@@ -65,5 +130,4 @@ public class NewsFeedRecyclerAdapter extends RecyclerView.Adapter<NewsFeedRecycl
     public int getItemCount() {
         return newsFeedlList.size();
     }
-
 }

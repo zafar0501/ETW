@@ -10,7 +10,9 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -19,6 +21,8 @@ import in.microlan.www.perfectmatrimony.R;
 import in.microlan.www.perfectmatrimony.authenticate.model.NewsFeedModel;
 import in.microlan.www.perfectmatrimony.common.adapter.NewsFeedRecyclerAdapter;
 import in.microlan.www.perfectmatrimony.common.base.BaseActivity;
+import in.microlan.www.perfectmatrimony.common.recycleviewtouchlistener.RecyclerTouchListener;
+
 
 public class NewsFeedActivity extends BaseActivity implements View.OnClickListener {
 
@@ -28,7 +32,9 @@ public class NewsFeedActivity extends BaseActivity implements View.OnClickListen
     private RecyclerView rvNewsFeed;
     private NewsFeedRecyclerAdapter newsFeedRecyclerAdapter;
     private RecyclerView.LayoutManager mLayoutManager;
+    private Button btnAddNews;
     private List<NewsFeedModel> newsFeedList = new ArrayList<>();
+    NewsFeedModel home;
 
 
     @Override
@@ -59,25 +65,39 @@ public class NewsFeedActivity extends BaseActivity implements View.OnClickListen
         back_Img = toolbar.findViewById(R.id.menu_back);
         ivFilter = toolbar.findViewById(R.id.ivFilter);
         rvNewsFeed = (RecyclerView) findViewById(R.id.rvNewsFeed);
+        btnAddNews = (Button) findViewById(R.id.btnAddNews);
 
-        newsFeedRecyclerAdapter = new NewsFeedRecyclerAdapter(newsFeedList);
+        newsFeedRecyclerAdapter = new NewsFeedRecyclerAdapter(newsFeedList, this);
         mLayoutManager = new LinearLayoutManager(this);
         rvNewsFeed.setLayoutManager(mLayoutManager);
         rvNewsFeed.setItemAnimator(new DefaultItemAnimator());
         rvNewsFeed.setAdapter(newsFeedRecyclerAdapter);
         prepareHomeData();
-
         back_Img.setOnClickListener(this);
         ivFilter.setOnClickListener(this);
 
+        btnAddNews.setOnClickListener(this);
+        rvNewsFeed.addOnItemTouchListener(new RecyclerTouchListener(getApplicationContext(), rvNewsFeed, new RecyclerTouchListener.ClickListener() {
+            @Override
+            public void onClick(View view, int position) {
+                home = newsFeedList.get(position);
+                Toast.makeText(getApplicationContext(), home.getTitle() + " is selected!", Toast.LENGTH_SHORT).show();
+                intent = new Intent(NewsFeedActivity.this, NewsDetailActivity.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.trans_right_in, R.anim.trans_right_out);
+            }
+
+            @Override
+            public void onLongClick(View view, int position) {
+
+            }
+        }));
     }
 
     private void prepareHomeData() {
         newsFeedList.clear();
 
-
-
-        NewsFeedModel home = new NewsFeedModel("ABP NEWS ","STAR News was launched on 18 February 1998. 3 ", R.mipmap.abpnews, "0", R.drawable.ic_dislike_icon);
+        home = new NewsFeedModel("ABP NEWS ", "STAR News was launched on 18 February 1998. 3 ", R.mipmap.abpnews, "0", R.drawable.ic_dislike_icon);
         newsFeedList.add(home);
         home = new NewsFeedModel("AAJ TAK", "फिल्म 'सुल्तान' में एक पहलवान की भूमिका निभाने के लिए वजन बढ़ाने वाले अभिनेता सलमान खान का कहना है कि इसके बाद वजन को कम करना उनके लिए तकलीफदेह रहा. फिल्म में सलमान ने पहलवान सुल्तान का किरदार निभाया था.  ", R.mipmap.ndtvnews, "1", R.drawable.ic_like_icon);
         newsFeedList.add(home);
@@ -110,7 +130,11 @@ public class NewsFeedActivity extends BaseActivity implements View.OnClickListen
                 intent = new Intent(NewsFeedActivity.this, NewsFeedFilterActivity.class);
                 startActivity(intent);
                 overridePendingTransition(R.anim.trans_right_in, R.anim.trans_right_out);
-                NewsFeedActivity.this.finish();
+                break;
+            case R.id.btnAddNews:
+                intent = new Intent(NewsFeedActivity.this, AddNewsActivity.class);
+                startActivity(intent);
+                overridePendingTransition(R.anim.trans_right_in, R.anim.trans_right_out);
                 break;
         }
     }

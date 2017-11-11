@@ -14,21 +14,21 @@
         android:layout_height="wrap_content" />
 
     <android.support.v7.widget.RecyclerView
-        android:id="@+id/rvNewsFeed"
+        android:id="@+id/rvCommunityHelp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_above="@+id/btnAddNews"
+        android:layout_above="@+id/btnCommHelp"
         android:layout_below="@+id/actionBar"
         android:padding="@dimen/_2sdp"
         android:scrollbars="vertical" />
 
     <Button
-        android:id="@+id/btnAddNews"
+        android:id="@+id/btnCommHelp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_margin="@dimen/_5sdp"
         android:background="@color/colorPrimary"
-        android:text="Add News"
+        android:text="Request for Help"
         android:textColor="@color/white" />
 </RelativeLayout>

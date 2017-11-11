@@ -61,6 +61,8 @@ public class StringConstant {
         String BUNDLE_GOAL_INFO = "bundleGoalInfo";
         String BUNDLE_PASSWORD = "bundlePassword";
         String BUNDLE_RESULT_RECEIVER = "bundleResultReceiver";
+        String BUNDLE_FEATURE = "BUNDLE_FEATURE";
+        int COMMUNITY = 1;
     }
 
     public interface DeviceBrandInfo {
