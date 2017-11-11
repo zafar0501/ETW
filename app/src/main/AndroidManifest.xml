@@ -90,6 +90,25 @@
         <activity android:name=".authenticate.view.ChangePasswordActivity"
             android:label=""
             android:theme="@style/AppTheme.NoActionBar"/>
+        <activity
+            android:name=".authenticate.view.AddNewsActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".authenticate.view.CommunityHelperActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".authenticate.view.AddCommRequestActiviy"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity
+            android:name=".authenticate.view.NewsDetailActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+
+
+
     </application>
 
 </manifest>

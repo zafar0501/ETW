@@ -36,6 +36,13 @@ public class NewsFeedModel {
         this.likesCount = likesCount;
 
     }
+    public NewsFeedModel(String title, String desc, int icon) {
+        this.title = title;
+        this.desc = desc;
+        this.icon = icon;
+
+
+    }
 
 
     public String getTitle() {
